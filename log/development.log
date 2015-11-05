@@ -13451,3 +13451,1419 @@ Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2015-11-05 14:02:4
 
 
 Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2015-11-05 14:02:40 +0200
+
+
+Started GET "/admin/admin_users" for 127.0.0.1 at 2015-11-05 14:25:27 +0200
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.1.8) lib/active_record/migration.rb:389:in `check_pending!'
+  activerecord (4.1.8) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (41.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to DeviseCreateAdminUsers (20151105115047)
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (4.0ms)[0m  [1mCREATE TABLE "admin_users" ("id" serial primary key, "email" character varying(255) DEFAULT '' NOT NULL, "encrypted_password" character varying(255) DEFAULT '' NOT NULL, "reset_password_token" character varying(255), "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" inet, "last_sign_in_ip" inet, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+PG::DuplicateTable: ERROR:  relation "admin_users" already exists
+: CREATE TABLE "admin_users" ("id" serial primary key, "email" character varying(255) DEFAULT '' NOT NULL, "encrypted_password" character varying(255) DEFAULT '' NOT NULL, "reset_password_token" character varying(255), "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" inet, "last_sign_in_ip" inet, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[35m (0.0ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/admin/admin_users" for 127.0.0.1 at 2015-11-05 14:26:49 +0200
+Processing by Admin::AdminUsersController#index as HTML
+  [1m[36mAdminUser Load (0.0ms)[0m  [1mSELECT  "admin_users".* FROM "admin_users"  WHERE "admin_users"."id" = 2  ORDER BY "admin_users"."id" ASC LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  SELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "admin_users"  LIMIT 30 OFFSET 0) subquery_for_count
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "admin_users"  LIMIT 30 OFFSET 0) subquery_for_count[0m
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "admin_users"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "admin_users"  LIMIT 30 OFFSET 0) subquery_for_count[0m
+  [1m[35mAdminUser Load (0.0ms)[0m  SELECT  "admin_users".* FROM "admin_users"   ORDER BY "admin_users"."id" desc LIMIT 30 OFFSET 0
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/bundler/gems/activeadmin-9005b67e6f2a/app/views/active_admin/resource/index.html.arb (236.2ms)
+Completed 200 OK in 281ms (Views: 242.2ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2015-11-05 14:26:49 +0200
+
+
+Started GET "/assets/jquery-ui/datepicker.js?body=1" for 127.0.0.1 at 2015-11-05 14:26:49 +0200
+
+
+Started GET "/assets/jquery-ui/core.js?body=1" for 127.0.0.1 at 2015-11-05 14:26:49 +0200
+
+
+Started GET "/assets/jquery-ui/widget.js?body=1" for 127.0.0.1 at 2015-11-05 14:26:49 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-05 14:26:49 +0200
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2015-11-05 14:26:49 +0200
+
+
+Started GET "/assets/jquery-ui/button.js?body=1" for 127.0.0.1 at 2015-11-05 14:26:49 +0200
+
+
+Started GET "/assets/jquery-ui/mouse.js?body=1" for 127.0.0.1 at 2015-11-05 14:26:49 +0200
+
+
+Started GET "/assets/jquery-ui/draggable.js?body=1" for 127.0.0.1 at 2015-11-05 14:26:49 +0200
+
+
+Started GET "/assets/jquery-ui/position.js?body=1" for 127.0.0.1 at 2015-11-05 14:26:49 +0200
+
+
+Started GET "/assets/jquery-ui/resizable.js?body=1" for 127.0.0.1 at 2015-11-05 14:26:49 +0200
+
+
+Started GET "/assets/jquery-ui/dialog.js?body=1" for 127.0.0.1 at 2015-11-05 14:26:49 +0200
+
+
+Started GET "/assets/jquery-ui/sortable.js?body=1" for 127.0.0.1 at 2015-11-05 14:26:49 +0200
+
+
+Started GET "/assets/jquery-ui/tabs.js?body=1" for 127.0.0.1 at 2015-11-05 14:26:49 +0200
+
+
+Started GET "/assets/active_admin/jquery_ui.js?body=1" for 127.0.0.1 at 2015-11-05 14:26:49 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-05 14:26:49 +0200
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2015-11-05 14:26:49 +0200
+
+
+Started GET "/assets/active_admin/lib/batch_actions.js?body=1" for 127.0.0.1 at 2015-11-05 14:26:49 +0200
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.js?body=1" for 127.0.0.1 at 2015-11-05 14:26:49 +0200
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.js?body=1" for 127.0.0.1 at 2015-11-05 14:26:49 +0200
+
+
+Started GET "/assets/active_admin/lib/flash.js?body=1" for 127.0.0.1 at 2015-11-05 14:26:49 +0200
+
+
+Started GET "/assets/active_admin/lib/has_many.js?body=1" for 127.0.0.1 at 2015-11-05 14:26:49 +0200
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.js?body=1" for 127.0.0.1 at 2015-11-05 14:26:49 +0200
+
+
+Started GET "/assets/active_admin/lib/per_page.js?body=1" for 127.0.0.1 at 2015-11-05 14:26:49 +0200
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.js?body=1" for 127.0.0.1 at 2015-11-05 14:26:49 +0200
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.js?body=1" for 127.0.0.1 at 2015-11-05 14:26:49 +0200
+
+
+Started GET "/assets/active_admin/ext/jquery.js?body=1" for 127.0.0.1 at 2015-11-05 14:26:49 +0200
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2015-11-05 14:26:49 +0200
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2015-11-05 14:26:50 +0200
+
+
+Started GET "/admin/categories" for 127.0.0.1 at 2015-11-05 14:26:51 +0200
+Processing by Admin::CategoriesController#index as HTML
+  [1m[36mAdminUser Load (0.0ms)[0m  [1mSELECT  "admin_users".* FROM "admin_users"  WHERE "admin_users"."id" = 2  ORDER BY "admin_users"."id" ASC LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  SELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "categories"  LIMIT 30 OFFSET 0) subquery_for_count
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "categories"  LIMIT 30 OFFSET 0) subquery_for_count[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "categories"
+  [1m[36mCACHE (1.0ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "categories"  LIMIT 30 OFFSET 0) subquery_for_count[0m
+  [1m[35mCategory Load (1.0ms)[0m  SELECT  "categories".* FROM "categories"   ORDER BY "categories"."id" desc LIMIT 30 OFFSET 0
+  [1m[36mPost Load (1.0ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/bundler/gems/activeadmin-9005b67e6f2a/app/views/active_admin/resource/index.html.arb (261.2ms)
+Completed 200 OK in 276ms (Views: 261.2ms | ActiveRecord: 9.0ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2015-11-05 14:26:52 +0200
+
+
+Started GET "/assets/jquery-ui/datepicker.js?body=1" for 127.0.0.1 at 2015-11-05 14:26:52 +0200
+
+
+Started GET "/assets/jquery-ui/button.js?body=1" for 127.0.0.1 at 2015-11-05 14:26:52 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-05 14:26:52 +0200
+
+
+Started GET "/assets/jquery-ui/core.js?body=1" for 127.0.0.1 at 2015-11-05 14:26:52 +0200
+
+
+Started GET "/assets/jquery-ui/widget.js?body=1" for 127.0.0.1 at 2015-11-05 14:26:52 +0200
+
+
+Started GET "/assets/jquery-ui/mouse.js?body=1" for 127.0.0.1 at 2015-11-05 14:26:52 +0200
+
+
+Started GET "/assets/jquery-ui/draggable.js?body=1" for 127.0.0.1 at 2015-11-05 14:26:52 +0200
+
+
+Started GET "/assets/jquery-ui/position.js?body=1" for 127.0.0.1 at 2015-11-05 14:26:52 +0200
+
+
+Started GET "/assets/jquery-ui/resizable.js?body=1" for 127.0.0.1 at 2015-11-05 14:26:52 +0200
+
+
+Started GET "/assets/jquery-ui/dialog.js?body=1" for 127.0.0.1 at 2015-11-05 14:26:52 +0200
+
+
+Started GET "/assets/jquery-ui/sortable.js?body=1" for 127.0.0.1 at 2015-11-05 14:26:52 +0200
+
+
+Started GET "/assets/jquery-ui/tabs.js?body=1" for 127.0.0.1 at 2015-11-05 14:26:52 +0200
+
+
+Started GET "/assets/active_admin/jquery_ui.js?body=1" for 127.0.0.1 at 2015-11-05 14:26:52 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-05 14:26:52 +0200
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2015-11-05 14:26:52 +0200
+
+
+Started GET "/assets/active_admin/lib/batch_actions.js?body=1" for 127.0.0.1 at 2015-11-05 14:26:52 +0200
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.js?body=1" for 127.0.0.1 at 2015-11-05 14:26:52 +0200
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.js?body=1" for 127.0.0.1 at 2015-11-05 14:26:52 +0200
+
+
+Started GET "/assets/active_admin/lib/flash.js?body=1" for 127.0.0.1 at 2015-11-05 14:26:52 +0200
+
+
+Started GET "/assets/active_admin/lib/has_many.js?body=1" for 127.0.0.1 at 2015-11-05 14:26:52 +0200
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.js?body=1" for 127.0.0.1 at 2015-11-05 14:26:52 +0200
+
+
+Started GET "/assets/active_admin/lib/per_page.js?body=1" for 127.0.0.1 at 2015-11-05 14:26:52 +0200
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.js?body=1" for 127.0.0.1 at 2015-11-05 14:26:52 +0200
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.js?body=1" for 127.0.0.1 at 2015-11-05 14:26:52 +0200
+
+
+Started GET "/assets/active_admin/ext/jquery.js?body=1" for 127.0.0.1 at 2015-11-05 14:26:52 +0200
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2015-11-05 14:26:52 +0200
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2015-11-05 14:26:52 +0200
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2015-11-05 14:26:52 +0200
+
+
+Started GET "/admin/comments" for 127.0.0.1 at 2015-11-05 14:26:57 +0200
+Processing by Admin::CommentsController#index as HTML
+  [1m[35mAdminUser Load (1.0ms)[0m  SELECT  "admin_users".* FROM "admin_users"  WHERE "admin_users"."id" = 2  ORDER BY "admin_users"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "active_admin_comments"  WHERE "active_admin_comments"."namespace" = 'admin'[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "active_admin_comments"  WHERE "active_admin_comments"."namespace" = 'admin' LIMIT 30 OFFSET 0) subquery_for_count
+  [1m[36m (1.0ms)[0m  [1mSELECT DISTINCT "active_admin_comments"."resource_type" FROM "active_admin_comments"   ORDER BY resource_type asc[0m
+  [1m[35m (0.5ms)[0m  SELECT DISTINCT "active_admin_comments"."author_type" FROM "active_admin_comments"   ORDER BY author_type asc
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/bundler/gems/activeadmin-9005b67e6f2a/app/views/active_admin/resource/index.html.arb (232.7ms)
+Completed 200 OK in 248ms (Views: 235.6ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/assets/jquery-ui/widget.js?body=1" for 127.0.0.1 at 2015-11-05 14:26:57 +0200
+
+
+Started GET "/assets/jquery-ui/datepicker.js?body=1" for 127.0.0.1 at 2015-11-05 14:26:57 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-05 14:26:57 +0200
+
+
+Started GET "/assets/jquery-ui/core.js?body=1" for 127.0.0.1 at 2015-11-05 14:26:57 +0200
+
+
+Started GET "/assets/jquery-ui/button.js?body=1" for 127.0.0.1 at 2015-11-05 14:26:57 +0200
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2015-11-05 14:26:57 +0200
+
+
+Started GET "/assets/jquery-ui/mouse.js?body=1" for 127.0.0.1 at 2015-11-05 14:26:57 +0200
+
+
+Started GET "/assets/jquery-ui/draggable.js?body=1" for 127.0.0.1 at 2015-11-05 14:26:57 +0200
+
+
+Started GET "/assets/jquery-ui/position.js?body=1" for 127.0.0.1 at 2015-11-05 14:26:57 +0200
+
+
+Started GET "/assets/jquery-ui/resizable.js?body=1" for 127.0.0.1 at 2015-11-05 14:26:57 +0200
+
+
+Started GET "/assets/jquery-ui/dialog.js?body=1" for 127.0.0.1 at 2015-11-05 14:26:57 +0200
+
+
+Started GET "/assets/jquery-ui/sortable.js?body=1" for 127.0.0.1 at 2015-11-05 14:26:57 +0200
+
+
+Started GET "/assets/jquery-ui/tabs.js?body=1" for 127.0.0.1 at 2015-11-05 14:26:57 +0200
+
+
+Started GET "/assets/active_admin/jquery_ui.js?body=1" for 127.0.0.1 at 2015-11-05 14:26:57 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-05 14:26:57 +0200
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2015-11-05 14:26:57 +0200
+
+
+Started GET "/assets/active_admin/lib/batch_actions.js?body=1" for 127.0.0.1 at 2015-11-05 14:26:57 +0200
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.js?body=1" for 127.0.0.1 at 2015-11-05 14:26:57 +0200
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.js?body=1" for 127.0.0.1 at 2015-11-05 14:26:57 +0200
+
+
+Started GET "/assets/active_admin/lib/flash.js?body=1" for 127.0.0.1 at 2015-11-05 14:26:57 +0200
+
+
+Started GET "/assets/active_admin/lib/has_many.js?body=1" for 127.0.0.1 at 2015-11-05 14:26:57 +0200
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.js?body=1" for 127.0.0.1 at 2015-11-05 14:26:57 +0200
+
+
+Started GET "/assets/active_admin/lib/per_page.js?body=1" for 127.0.0.1 at 2015-11-05 14:26:57 +0200
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.js?body=1" for 127.0.0.1 at 2015-11-05 14:26:57 +0200
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.js?body=1" for 127.0.0.1 at 2015-11-05 14:26:57 +0200
+
+
+Started GET "/assets/active_admin/ext/jquery.js?body=1" for 127.0.0.1 at 2015-11-05 14:26:57 +0200
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2015-11-05 14:26:57 +0200
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2015-11-05 14:26:57 +0200
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2015-11-05 14:26:57 +0200
+
+
+Started GET "/admin/posts" for 127.0.0.1 at 2015-11-05 14:27:03 +0200
+Processing by Admin::PostsController#index as HTML
+  [1m[36mAdminUser Load (0.0ms)[0m  [1mSELECT  "admin_users".* FROM "admin_users"  WHERE "admin_users"."id" = 2  ORDER BY "admin_users"."id" ASC LIMIT 1[0m
+  [1m[35m (2.0ms)[0m  SELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "posts"  LIMIT 30 OFFSET 0) subquery_for_count
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "posts"  LIMIT 30 OFFSET 0) subquery_for_count[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "posts"  LIMIT 30 OFFSET 0) subquery_for_count[0m
+  [1m[35mPost Load (0.0ms)[0m  SELECT  "posts".* FROM "posts"   ORDER BY "posts"."id" desc LIMIT 30 OFFSET 0
+  [1m[36mCategory Load (1.0ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/bundler/gems/activeadmin-9005b67e6f2a/app/views/active_admin/resource/index.html.arb (331.9ms)
+Completed 200 OK in 346ms (Views: 337.9ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/jquery-ui/core.js?body=1" for 127.0.0.1 at 2015-11-05 14:27:04 +0200
+
+
+Started GET "/assets/jquery-ui/datepicker.js?body=1" for 127.0.0.1 at 2015-11-05 14:27:04 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-05 14:27:04 +0200
+
+
+Started GET "/assets/jquery-ui/button.js?body=1" for 127.0.0.1 at 2015-11-05 14:27:04 +0200
+
+
+Started GET "/assets/jquery-ui/widget.js?body=1" for 127.0.0.1 at 2015-11-05 14:27:04 +0200
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2015-11-05 14:27:04 +0200
+
+
+Started GET "/assets/jquery-ui/mouse.js?body=1" for 127.0.0.1 at 2015-11-05 14:27:04 +0200
+
+
+Started GET "/assets/jquery-ui/draggable.js?body=1" for 127.0.0.1 at 2015-11-05 14:27:04 +0200
+
+
+Started GET "/assets/jquery-ui/position.js?body=1" for 127.0.0.1 at 2015-11-05 14:27:04 +0200
+
+
+Started GET "/assets/jquery-ui/resizable.js?body=1" for 127.0.0.1 at 2015-11-05 14:27:04 +0200
+
+
+Started GET "/assets/jquery-ui/dialog.js?body=1" for 127.0.0.1 at 2015-11-05 14:27:04 +0200
+
+
+Started GET "/assets/jquery-ui/sortable.js?body=1" for 127.0.0.1 at 2015-11-05 14:27:04 +0200
+
+
+Started GET "/assets/jquery-ui/tabs.js?body=1" for 127.0.0.1 at 2015-11-05 14:27:04 +0200
+
+
+Started GET "/assets/active_admin/jquery_ui.js?body=1" for 127.0.0.1 at 2015-11-05 14:27:04 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-05 14:27:04 +0200
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2015-11-05 14:27:04 +0200
+
+
+Started GET "/assets/active_admin/lib/batch_actions.js?body=1" for 127.0.0.1 at 2015-11-05 14:27:04 +0200
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.js?body=1" for 127.0.0.1 at 2015-11-05 14:27:04 +0200
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.js?body=1" for 127.0.0.1 at 2015-11-05 14:27:04 +0200
+
+
+Started GET "/assets/active_admin/lib/flash.js?body=1" for 127.0.0.1 at 2015-11-05 14:27:04 +0200
+
+
+Started GET "/assets/active_admin/lib/has_many.js?body=1" for 127.0.0.1 at 2015-11-05 14:27:04 +0200
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.js?body=1" for 127.0.0.1 at 2015-11-05 14:27:04 +0200
+
+
+Started GET "/assets/active_admin/lib/per_page.js?body=1" for 127.0.0.1 at 2015-11-05 14:27:04 +0200
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.js?body=1" for 127.0.0.1 at 2015-11-05 14:27:04 +0200
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.js?body=1" for 127.0.0.1 at 2015-11-05 14:27:04 +0200
+
+
+Started GET "/assets/active_admin/ext/jquery.js?body=1" for 127.0.0.1 at 2015-11-05 14:27:04 +0200
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2015-11-05 14:27:04 +0200
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2015-11-05 14:27:04 +0200
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2015-11-05 14:27:04 +0200
+
+
+Started GET "/admin/dashboard" for 127.0.0.1 at 2015-11-05 14:27:09 +0200
+Processing by Admin::DashboardController#index as HTML
+  [1m[35mAdminUser Load (1.0ms)[0m  SELECT  "admin_users".* FROM "admin_users"  WHERE "admin_users"."id" = 2  ORDER BY "admin_users"."id" ASC LIMIT 1
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/bundler/gems/activeadmin-9005b67e6f2a/app/views/active_admin/page/index.html.arb (261.7ms)
+Completed 200 OK in 273ms (Views: 264.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2015-11-05 14:27:09 +0200
+
+
+Started GET "/assets/jquery-ui/widget.js?body=1" for 127.0.0.1 at 2015-11-05 14:27:09 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-05 14:27:10 +0200
+
+
+Started GET "/assets/jquery-ui/button.js?body=1" for 127.0.0.1 at 2015-11-05 14:27:10 +0200
+
+
+Started GET "/assets/jquery-ui/datepicker.js?body=1" for 127.0.0.1 at 2015-11-05 14:27:10 +0200
+
+
+Started GET "/assets/jquery-ui/core.js?body=1" for 127.0.0.1 at 2015-11-05 14:27:10 +0200
+
+
+Started GET "/assets/jquery-ui/mouse.js?body=1" for 127.0.0.1 at 2015-11-05 14:27:10 +0200
+
+
+Started GET "/assets/jquery-ui/draggable.js?body=1" for 127.0.0.1 at 2015-11-05 14:27:10 +0200
+
+
+Started GET "/assets/jquery-ui/position.js?body=1" for 127.0.0.1 at 2015-11-05 14:27:10 +0200
+
+
+Started GET "/assets/jquery-ui/resizable.js?body=1" for 127.0.0.1 at 2015-11-05 14:27:10 +0200
+
+
+Started GET "/assets/jquery-ui/dialog.js?body=1" for 127.0.0.1 at 2015-11-05 14:27:10 +0200
+
+
+Started GET "/assets/jquery-ui/sortable.js?body=1" for 127.0.0.1 at 2015-11-05 14:27:10 +0200
+
+
+Started GET "/assets/jquery-ui/tabs.js?body=1" for 127.0.0.1 at 2015-11-05 14:27:10 +0200
+
+
+Started GET "/assets/active_admin/jquery_ui.js?body=1" for 127.0.0.1 at 2015-11-05 14:27:10 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-05 14:27:10 +0200
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2015-11-05 14:27:10 +0200
+
+
+Started GET "/assets/active_admin/lib/batch_actions.js?body=1" for 127.0.0.1 at 2015-11-05 14:27:10 +0200
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.js?body=1" for 127.0.0.1 at 2015-11-05 14:27:10 +0200
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.js?body=1" for 127.0.0.1 at 2015-11-05 14:27:10 +0200
+
+
+Started GET "/assets/active_admin/lib/flash.js?body=1" for 127.0.0.1 at 2015-11-05 14:27:10 +0200
+
+
+Started GET "/assets/active_admin/lib/has_many.js?body=1" for 127.0.0.1 at 2015-11-05 14:27:10 +0200
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.js?body=1" for 127.0.0.1 at 2015-11-05 14:27:10 +0200
+
+
+Started GET "/assets/active_admin/lib/per_page.js?body=1" for 127.0.0.1 at 2015-11-05 14:27:10 +0200
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.js?body=1" for 127.0.0.1 at 2015-11-05 14:27:10 +0200
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.js?body=1" for 127.0.0.1 at 2015-11-05 14:27:10 +0200
+
+
+Started GET "/assets/active_admin/ext/jquery.js?body=1" for 127.0.0.1 at 2015-11-05 14:27:10 +0200
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2015-11-05 14:27:10 +0200
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2015-11-05 14:27:10 +0200
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2015-11-05 14:27:10 +0200
+
+
+Started GET "/admin/dashboard" for 127.0.0.1 at 2015-11-05 14:27:45 +0200
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mAdminUser Load (0.5ms)[0m  [1mSELECT  "admin_users".* FROM "admin_users"  WHERE "admin_users"."id" = 2  ORDER BY "admin_users"."id" ASC LIMIT 1[0m
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/bundler/gems/activeadmin-9005b67e6f2a/app/views/active_admin/page/index.html.arb (214.2ms)
+Completed 200 OK in 249ms (Views: 218.2ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-05 14:27:45 +0200
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2015-11-05 14:27:45 +0200
+
+
+Started GET "/assets/jquery-ui/core.js?body=1" for 127.0.0.1 at 2015-11-05 14:27:45 +0200
+
+
+Started GET "/assets/jquery-ui/datepicker.js?body=1" for 127.0.0.1 at 2015-11-05 14:27:45 +0200
+
+
+Started GET "/assets/jquery-ui/widget.js?body=1" for 127.0.0.1 at 2015-11-05 14:27:45 +0200
+
+
+Started GET "/assets/jquery-ui/button.js?body=1" for 127.0.0.1 at 2015-11-05 14:27:45 +0200
+
+
+Started GET "/assets/jquery-ui/mouse.js?body=1" for 127.0.0.1 at 2015-11-05 14:27:45 +0200
+
+
+Started GET "/assets/jquery-ui/draggable.js?body=1" for 127.0.0.1 at 2015-11-05 14:27:45 +0200
+
+
+Started GET "/assets/jquery-ui/position.js?body=1" for 127.0.0.1 at 2015-11-05 14:27:45 +0200
+
+
+Started GET "/assets/jquery-ui/resizable.js?body=1" for 127.0.0.1 at 2015-11-05 14:27:45 +0200
+
+
+Started GET "/assets/jquery-ui/dialog.js?body=1" for 127.0.0.1 at 2015-11-05 14:27:45 +0200
+
+
+Started GET "/assets/jquery-ui/sortable.js?body=1" for 127.0.0.1 at 2015-11-05 14:27:45 +0200
+
+
+Started GET "/assets/jquery-ui/tabs.js?body=1" for 127.0.0.1 at 2015-11-05 14:27:45 +0200
+
+
+Started GET "/assets/active_admin/jquery_ui.js?body=1" for 127.0.0.1 at 2015-11-05 14:27:45 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-05 14:27:45 +0200
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2015-11-05 14:27:45 +0200
+
+
+Started GET "/assets/active_admin/lib/batch_actions.js?body=1" for 127.0.0.1 at 2015-11-05 14:27:45 +0200
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.js?body=1" for 127.0.0.1 at 2015-11-05 14:27:46 +0200
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.js?body=1" for 127.0.0.1 at 2015-11-05 14:27:46 +0200
+
+
+Started GET "/assets/active_admin/lib/per_page.js?body=1" for 127.0.0.1 at 2015-11-05 14:27:46 +0200
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.js?body=1" for 127.0.0.1 at 2015-11-05 14:27:46 +0200
+
+
+Started GET "/assets/active_admin/lib/flash.js?body=1" for 127.0.0.1 at 2015-11-05 14:27:46 +0200
+
+
+Started GET "/assets/active_admin/lib/has_many.js?body=1" for 127.0.0.1 at 2015-11-05 14:27:46 +0200
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.js?body=1" for 127.0.0.1 at 2015-11-05 14:27:46 +0200
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.js?body=1" for 127.0.0.1 at 2015-11-05 14:27:46 +0200
+
+
+Started GET "/assets/active_admin/ext/jquery.js?body=1" for 127.0.0.1 at 2015-11-05 14:27:46 +0200
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2015-11-05 14:27:46 +0200
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2015-11-05 14:27:46 +0200
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2015-11-05 14:27:46 +0200
+
+
+Started GET "/admin/dashboard" for 127.0.0.1 at 2015-11-05 14:32:59 +0200
+
+SyntaxError (C:/Sites/rubyblog/app/admin/dashboard.rb:12: syntax error, unexpected keyword_end):
+  app/admin/dashboard.rb:12: syntax error, unexpected keyword_end
+  config/routes.rb:3:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (40.0ms)
+
+
+Started GET "/admin/dashboard" for 127.0.0.1 at 2015-11-05 14:34:13 +0200
+
+SyntaxError (C:/Sites/rubyblog/app/admin/dashboard.rb:12: syntax error, unexpected keyword_end):
+  app/admin/dashboard.rb:12: syntax error, unexpected keyword_end
+  config/routes.rb:3:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (38.0ms)
+
+
+Started GET "/admin/dashboard" for 127.0.0.1 at 2015-11-05 14:34:37 +0200
+
+NameError (uninitialized constant ActiveAdmin::Dashboard):
+  app/admin/dashboard.rb:1:in `<top (required)>'
+  config/routes.rb:3:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (35.5ms)
+
+
+Started GET "/admin/dashboard" for 127.0.0.1 at 2015-11-05 14:34:48 +0200
+
+NameError (uninitialized constant ActiveAdmin::Dashboards):
+  app/admin/dashboard.rb:1:in `<top (required)>'
+  config/routes.rb:3:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (36.0ms)
+
+
+Started GET "/admin/dashboard" for 127.0.0.1 at 2015-11-05 14:35:46 +0200
+
+NameError (uninitialized constant ActiveAdmin::Dashboard):
+  app/admin/dashboard.rb:1:in `<top (required)>'
+  config/routes.rb:3:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (37.0ms)
+
+
+Started GET "/admin/dashboard" for 127.0.0.1 at 2015-11-05 14:36:41 +0200
+
+ActionController::RoutingError (No route matches [GET] "/admin/dashboard"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (37.9ms)
+
+
+Started GET "/admin/dashboard" for 127.0.0.1 at 2015-11-05 14:37:14 +0200
+
+ActionController::RoutingError (No route matches [GET] "/admin/dashboard"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (35.5ms)
+
+
+Started GET "/admin/dashboard" for 127.0.0.1 at 2015-11-05 14:37:16 +0200
+
+ActionController::RoutingError (No route matches [GET] "/admin/dashboard"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (38.0ms)
+
+
+Started GET "/admin/dashboard" for 127.0.0.1 at 2015-11-05 14:37:37 +0200
+
+NameError (uninitialized constant ActiveAdmin::Dashboard):
+  app/admin/dashboard.rb:1:in `<top (required)>'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (35.0ms)
+
+
+Started GET "/admin/dashboard" for 127.0.0.1 at 2015-11-05 14:40:40 +0200
+
+NameError (uninitialized constant ActiveAdmin::Dashboard):
+  app/admin/dashboard.rb:1:in `<top (required)>'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (35.0ms)
+
+
+Started GET "/admin/dashboard" for 127.0.0.1 at 2015-11-05 14:40:42 +0200
+
+NameError (uninitialized constant ActiveAdmin::Dashboard):
+  app/admin/dashboard.rb:1:in `<top (required)>'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (36.5ms)
+
+
+Started GET "/admin/dashboard" for 127.0.0.1 at 2015-11-05 14:41:13 +0200
+
+NoMethodError (undefined method `section' for #<ActiveAdmin::PageDSL:0x76bc198>):
+  app/admin/dashboard.rb:2:in `block in <top (required)>'
+  app/admin/dashboard.rb:1:in `<top (required)>'
+  config/routes.rb:68:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (35.0ms)
+
+
+Started GET "/admin/dashboard" for 127.0.0.1 at 2015-11-05 14:44:12 +0200
+
+NameError (uninitialized constant ActiveAdmin::Dashboards):
+  app/admin/dashboard.rb:1:in `<top (required)>'
+  config/routes.rb:68:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (35.0ms)
+
+
+Started GET "/admin/dashboard" for 127.0.0.1 at 2015-11-05 14:52:31 +0200
+
+NoMethodError (undefined method `section' for #<ActiveAdmin::PageDSL:0x69372a8>):
+  app/admin/dashboard.rb:2:in `block in <top (required)>'
+  app/admin/dashboard.rb:1:in `<top (required)>'
+  config/routes.rb:68:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (44.0ms)
+
+
+Started GET "/admin/dashboard" for 127.0.0.1 at 2015-11-05 14:52:57 +0200
+
+TypeError (no implicit conversion of Symbol into Integer):
+  app/admin/dashboard.rb:2:in `block in <top (required)>'
+  app/admin/dashboard.rb:1:in `<top (required)>'
+  config/routes.rb:68:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (35.0ms)
+
+
+Started GET "/admin/dashboard" for 127.0.0.1 at 2015-11-05 14:53:49 +0200
+
+TypeError (no implicit conversion of Symbol into Integer):
+  app/admin/dashboard.rb:3:in `block in <top (required)>'
+  app/admin/dashboard.rb:1:in `<top (required)>'
+  config/routes.rb:68:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (37.5ms)
+
+
+Started GET "/admin/dashboard" for 127.0.0.1 at 2015-11-05 14:54:21 +0200
+
+SyntaxError (C:/Sites/rubyblog/app/admin/dashboard.rb:14: syntax error, unexpected keyword_end, expecting end-of-input):
+  app/admin/dashboard.rb:14: syntax error, unexpected keyword_end, expecting end-of-input
+  config/routes.rb:68:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (35.0ms)
+
+
+Started GET "/admin/dashboard" for 127.0.0.1 at 2015-11-05 14:54:49 +0200
+
+NoMethodError (undefined method `table_for' for #<ActiveAdmin::PageDSL:0x88da1b0>):
+  app/admin/dashboard.rb:4:in `block in <top (required)>'
+  app/admin/dashboard.rb:1:in `<top (required)>'
+  config/routes.rb:68:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (35.5ms)
+
+
+Started GET "/admin/dashboard" for 127.0.0.1 at 2015-11-05 14:55:51 +0200
+
+NoMethodError (undefined method `panel' for #<ActiveAdmin::PageDSL:0x7dcb998>):
+  app/admin/dashboard.rb:4:in `block in <top (required)>'
+  app/admin/dashboard.rb:1:in `<top (required)>'
+  config/routes.rb:68:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (35.0ms)
+
+
+Started GET "/admin/dashboard" for 127.0.0.1 at 2015-11-05 14:56:27 +0200
+
+NoMethodError (undefined method `column' for #<ActiveAdmin::PageDSL:0x79f4250>):
+  app/admin/dashboard.rb:4:in `block in <top (required)>'
+  app/admin/dashboard.rb:1:in `<top (required)>'
+  config/routes.rb:68:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (36.0ms)
+
+
+Started GET "/admin/dashboard" for 127.0.0.1 at 2015-11-05 14:58:26 +0200
+
+NoMethodError (undefined method `column' for #<ActiveAdmin::PageDSL:0x6b562f0>):
+  app/admin/dashboard.rb:4:in `block in <top (required)>'
+  app/admin/dashboard.rb:1:in `<top (required)>'
+  config/routes.rb:68:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (36.0ms)
+
+
+Started GET "/admin/dashboard" for 127.0.0.1 at 2015-11-05 14:58:41 +0200
+
+NoMethodError (undefined method `panel' for #<ActiveAdmin::PageDSL:0x51852d8>):
+  app/admin/dashboard.rb:6:in `block in <top (required)>'
+  app/admin/dashboard.rb:1:in `<top (required)>'
+  config/routes.rb:68:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (35.1ms)
+
+
+Started GET "/admin/dashboard" for 127.0.0.1 at 2015-11-05 14:58:58 +0200
+
+NoMethodError (undefined method `table_for' for #<ActiveAdmin::PageDSL:0x8f938b0>):
+  app/admin/dashboard.rb:6:in `block in <top (required)>'
+  app/admin/dashboard.rb:1:in `<top (required)>'
+  config/routes.rb:68:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (35.5ms)
+
+
+Started GET "/admin/dashboard" for 127.0.0.1 at 2015-11-05 15:02:32 +0200
+
+NameError (uninitialized constant ActiveAdmin::Dashboard):
+  app/admin/dashboard.rb:1:in `<top (required)>'
+  config/routes.rb:68:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (35.3ms)
+
+
+Started GET "/admin/dashboard" for 127.0.0.1 at 2015-11-05 15:15:54 +0200
+
+NameError (uninitialized constant ActiveAdmin::Dashboard):
+  app/admin/dashboard.rb:1:in `<top (required)>'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (36.0ms)
+
+
+Started GET "/admin/dashboard" for 127.0.0.1 at 2015-11-05 15:16:43 +0200
+
+NameError (uninitialized constant ActiveAdmin::Dashboard):
+  app/admin/dashboard.rb:1:in `<top (required)>'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (34.0ms)
+
+
+Started GET "/admin/dashboard" for 127.0.0.1 at 2015-11-05 15:16:44 +0200
+
+NameError (uninitialized constant ActiveAdmin::Dashboard):
+  app/admin/dashboard.rb:1:in `<top (required)>'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (36.0ms)
+
+
+Started GET "/admin/dashboard" for 127.0.0.1 at 2015-11-05 15:21:35 +0200
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mAdminUser Load (1.0ms)[0m  [1mSELECT  "admin_users".* FROM "admin_users"  WHERE "admin_users"."id" = 2  ORDER BY "admin_users"."id" ASC LIMIT 1[0m
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/bundler/gems/activeadmin-9005b67e6f2a/app/views/active_admin/page/index.html.arb (409.3ms)
+Completed 200 OK in 468ms (Views: 423.3ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/assets/jquery-ui/core.js?body=1" for 127.0.0.1 at 2015-11-05 15:21:36 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-05 15:21:36 +0200
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2015-11-05 15:21:36 +0200
+
+
+Started GET "/assets/jquery-ui/datepicker.js?body=1" for 127.0.0.1 at 2015-11-05 15:21:36 +0200
+
+
+Started GET "/assets/jquery-ui/widget.js?body=1" for 127.0.0.1 at 2015-11-05 15:21:36 +0200
+
+
+Started GET "/assets/jquery-ui/button.js?body=1" for 127.0.0.1 at 2015-11-05 15:21:36 +0200
+
+
+Started GET "/assets/jquery-ui/mouse.js?body=1" for 127.0.0.1 at 2015-11-05 15:21:36 +0200
+
+
+Started GET "/assets/jquery-ui/draggable.js?body=1" for 127.0.0.1 at 2015-11-05 15:21:36 +0200
+
+
+Started GET "/assets/jquery-ui/position.js?body=1" for 127.0.0.1 at 2015-11-05 15:21:36 +0200
+
+
+Started GET "/assets/jquery-ui/resizable.js?body=1" for 127.0.0.1 at 2015-11-05 15:21:36 +0200
+
+
+Started GET "/assets/jquery-ui/dialog.js?body=1" for 127.0.0.1 at 2015-11-05 15:21:36 +0200
+
+
+Started GET "/assets/jquery-ui/sortable.js?body=1" for 127.0.0.1 at 2015-11-05 15:21:36 +0200
+
+
+Started GET "/assets/jquery-ui/tabs.js?body=1" for 127.0.0.1 at 2015-11-05 15:21:36 +0200
+
+
+Started GET "/assets/active_admin/jquery_ui.js?body=1" for 127.0.0.1 at 2015-11-05 15:21:36 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-05 15:21:36 +0200
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2015-11-05 15:21:36 +0200
+
+
+Started GET "/assets/active_admin/lib/batch_actions.js?body=1" for 127.0.0.1 at 2015-11-05 15:21:36 +0200
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.js?body=1" for 127.0.0.1 at 2015-11-05 15:21:36 +0200
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.js?body=1" for 127.0.0.1 at 2015-11-05 15:21:36 +0200
+
+
+Started GET "/assets/active_admin/lib/flash.js?body=1" for 127.0.0.1 at 2015-11-05 15:21:36 +0200
+
+
+Started GET "/assets/active_admin/lib/has_many.js?body=1" for 127.0.0.1 at 2015-11-05 15:21:36 +0200
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.js?body=1" for 127.0.0.1 at 2015-11-05 15:21:36 +0200
+
+
+Started GET "/assets/active_admin/lib/per_page.js?body=1" for 127.0.0.1 at 2015-11-05 15:21:36 +0200
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.js?body=1" for 127.0.0.1 at 2015-11-05 15:21:36 +0200
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.js?body=1" for 127.0.0.1 at 2015-11-05 15:21:36 +0200
+
+
+Started GET "/assets/active_admin/ext/jquery.js?body=1" for 127.0.0.1 at 2015-11-05 15:21:37 +0200
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2015-11-05 15:21:37 +0200
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2015-11-05 15:21:37 +0200
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2015-11-05 15:21:37 +0200
+
+
+Started GET "/admin/posts" for 127.0.0.1 at 2015-11-05 15:21:47 +0200
+Processing by Admin::PostsController#index as HTML
+  [1m[35mAdminUser Load (1.0ms)[0m  SELECT  "admin_users".* FROM "admin_users"  WHERE "admin_users"."id" = 2  ORDER BY "admin_users"."id" ASC LIMIT 1
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "posts"  LIMIT 30 OFFSET 0) subquery_for_count[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "posts"  LIMIT 30 OFFSET 0) subquery_for_count
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "posts"  LIMIT 30 OFFSET 0) subquery_for_count
+  [1m[36mPost Load (1.0ms)[0m  [1mSELECT  "posts".* FROM "posts"   ORDER BY "posts"."id" desc LIMIT 30 OFFSET 0[0m
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/bundler/gems/activeadmin-9005b67e6f2a/app/views/active_admin/resource/index.html.arb (293.7ms)
+Completed 200 OK in 314ms (Views: 297.7ms | ActiveRecord: 8.0ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2015-11-05 15:21:48 +0200
+
+
+Started GET "/assets/jquery-ui/button.js?body=1" for 127.0.0.1 at 2015-11-05 15:21:48 +0200
+
+
+Started GET "/assets/jquery-ui/core.js?body=1" for 127.0.0.1 at 2015-11-05 15:21:48 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-05 15:21:48 +0200
+
+
+Started GET "/assets/jquery-ui/datepicker.js?body=1" for 127.0.0.1 at 2015-11-05 15:21:48 +0200
+
+
+Started GET "/assets/jquery-ui/widget.js?body=1" for 127.0.0.1 at 2015-11-05 15:21:48 +0200
+
+
+Started GET "/assets/jquery-ui/mouse.js?body=1" for 127.0.0.1 at 2015-11-05 15:21:48 +0200
+
+
+Started GET "/assets/jquery-ui/draggable.js?body=1" for 127.0.0.1 at 2015-11-05 15:21:48 +0200
+
+
+Started GET "/assets/jquery-ui/position.js?body=1" for 127.0.0.1 at 2015-11-05 15:21:48 +0200
+
+
+Started GET "/assets/jquery-ui/resizable.js?body=1" for 127.0.0.1 at 2015-11-05 15:21:48 +0200
+
+
+Started GET "/assets/jquery-ui/dialog.js?body=1" for 127.0.0.1 at 2015-11-05 15:21:48 +0200
+
+
+Started GET "/assets/jquery-ui/sortable.js?body=1" for 127.0.0.1 at 2015-11-05 15:21:48 +0200
+
+
+Started GET "/assets/jquery-ui/tabs.js?body=1" for 127.0.0.1 at 2015-11-05 15:21:48 +0200
+
+
+Started GET "/assets/active_admin/jquery_ui.js?body=1" for 127.0.0.1 at 2015-11-05 15:21:48 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-05 15:21:48 +0200
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2015-11-05 15:21:48 +0200
+
+
+Started GET "/assets/active_admin/lib/batch_actions.js?body=1" for 127.0.0.1 at 2015-11-05 15:21:48 +0200
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.js?body=1" for 127.0.0.1 at 2015-11-05 15:21:48 +0200
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.js?body=1" for 127.0.0.1 at 2015-11-05 15:21:48 +0200
+
+
+Started GET "/assets/active_admin/lib/flash.js?body=1" for 127.0.0.1 at 2015-11-05 15:21:48 +0200
+
+
+Started GET "/assets/active_admin/lib/has_many.js?body=1" for 127.0.0.1 at 2015-11-05 15:21:48 +0200
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.js?body=1" for 127.0.0.1 at 2015-11-05 15:21:48 +0200
+
+
+Started GET "/assets/active_admin/lib/per_page.js?body=1" for 127.0.0.1 at 2015-11-05 15:21:48 +0200
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.js?body=1" for 127.0.0.1 at 2015-11-05 15:21:48 +0200
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.js?body=1" for 127.0.0.1 at 2015-11-05 15:21:48 +0200
+
+
+Started GET "/assets/active_admin/ext/jquery.js?body=1" for 127.0.0.1 at 2015-11-05 15:21:48 +0200
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2015-11-05 15:21:48 +0200
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2015-11-05 15:21:48 +0200
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2015-11-05 15:21:48 +0200
+
+
+Started GET "/assets/active_admin/datepicker/datepicker-input-icon.png" for 127.0.0.1 at 2015-11-05 15:21:48 +0200
+
+
+Started GET "/assets/active_admin/orderable.png" for 127.0.0.1 at 2015-11-05 15:21:48 +0200
+
+
+Started GET "/admin/dashboard" for 127.0.0.1 at 2015-11-05 15:22:50 +0200
+
+NoMethodError (undefined method `section' for #<ActiveAdmin::PageDSL:0x8576c88>):
+  app/admin/dashboard.rb:3:in `block in <top (required)>'
+  app/admin/dashboard.rb:1:in `<top (required)>'
+  config/routes.rb:69:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (36.1ms)
+
+
+Started GET "/admin/dashboard" for 127.0.0.1 at 2015-11-05 15:23:39 +0200
+
+NoMethodError (undefined method `table_for' for #<ActiveAdmin::PageDSL:0x7a99610>):
+  app/admin/dashboard.rb:3:in `block in <top (required)>'
+  app/admin/dashboard.rb:1:in `<top (required)>'
+  config/routes.rb:69:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (36.0ms)
+
+
+Started GET "/admin/dashboard" for 127.0.0.1 at 2015-11-05 15:26:15 +0200
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mAdminUser Load (0.0ms)[0m  [1mSELECT  "admin_users".* FROM "admin_users"  WHERE "admin_users"."id" = 2  ORDER BY "admin_users"."id" ASC LIMIT 1[0m
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/bundler/gems/activeadmin-9005b67e6f2a/app/views/active_admin/page/index.html.arb (193.1ms)
+Completed 200 OK in 225ms (Views: 197.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2015-11-05 15:26:16 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-05 15:26:16 +0200
+
+
+Started GET "/assets/jquery-ui/core.js?body=1" for 127.0.0.1 at 2015-11-05 15:26:16 +0200
+
+
+Started GET "/assets/jquery-ui/datepicker.js?body=1" for 127.0.0.1 at 2015-11-05 15:26:16 +0200
+
+
+Started GET "/assets/jquery-ui/button.js?body=1" for 127.0.0.1 at 2015-11-05 15:26:16 +0200
+
+
+Started GET "/assets/jquery-ui/widget.js?body=1" for 127.0.0.1 at 2015-11-05 15:26:16 +0200
+
+
+Started GET "/assets/jquery-ui/mouse.js?body=1" for 127.0.0.1 at 2015-11-05 15:26:16 +0200
+
+
+Started GET "/assets/jquery-ui/draggable.js?body=1" for 127.0.0.1 at 2015-11-05 15:26:16 +0200
+
+
+Started GET "/assets/jquery-ui/position.js?body=1" for 127.0.0.1 at 2015-11-05 15:26:16 +0200
+
+
+Started GET "/assets/jquery-ui/resizable.js?body=1" for 127.0.0.1 at 2015-11-05 15:26:16 +0200
+
+
+Started GET "/assets/jquery-ui/dialog.js?body=1" for 127.0.0.1 at 2015-11-05 15:26:16 +0200
+
+
+Started GET "/assets/jquery-ui/sortable.js?body=1" for 127.0.0.1 at 2015-11-05 15:26:16 +0200
+
+
+Started GET "/assets/jquery-ui/tabs.js?body=1" for 127.0.0.1 at 2015-11-05 15:26:16 +0200
+
+
+Started GET "/assets/active_admin/jquery_ui.js?body=1" for 127.0.0.1 at 2015-11-05 15:26:16 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-05 15:26:16 +0200
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2015-11-05 15:26:16 +0200
+
+
+Started GET "/assets/active_admin/lib/batch_actions.js?body=1" for 127.0.0.1 at 2015-11-05 15:26:16 +0200
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.js?body=1" for 127.0.0.1 at 2015-11-05 15:26:16 +0200
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.js?body=1" for 127.0.0.1 at 2015-11-05 15:26:16 +0200
+
+
+Started GET "/assets/active_admin/lib/flash.js?body=1" for 127.0.0.1 at 2015-11-05 15:26:16 +0200
+
+
+Started GET "/assets/active_admin/lib/has_many.js?body=1" for 127.0.0.1 at 2015-11-05 15:26:16 +0200
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.js?body=1" for 127.0.0.1 at 2015-11-05 15:26:16 +0200
+
+
+Started GET "/assets/active_admin/lib/per_page.js?body=1" for 127.0.0.1 at 2015-11-05 15:26:16 +0200
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.js?body=1" for 127.0.0.1 at 2015-11-05 15:26:16 +0200
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.js?body=1" for 127.0.0.1 at 2015-11-05 15:26:16 +0200
+
+
+Started GET "/assets/active_admin/ext/jquery.js?body=1" for 127.0.0.1 at 2015-11-05 15:26:16 +0200
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2015-11-05 15:26:16 +0200
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2015-11-05 15:26:16 +0200
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2015-11-05 15:26:16 +0200
+
+
+Started GET "/admin/dashboard" for 127.0.0.1 at 2015-11-05 15:27:56 +0200
+
+NoMethodError (undefined method `index' for #<ActiveAdmin::PageDSL:0x87d2d08>):
+  app/admin/dashboard.rb:3:in `block in <top (required)>'
+  app/admin/dashboard.rb:1:in `<top (required)>'
+  config/routes.rb:69:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (37.0ms)
