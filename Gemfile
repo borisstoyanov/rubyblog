@@ -8,6 +8,8 @@ gem 'pg', '~> 0.18.2'
 
 gem 'activeadmin', github: 'activeadmin'
 
+gem 'rails_12factor', group: :production
+
 gem 'devise'
 
 # Use SCSS for stylesheets
