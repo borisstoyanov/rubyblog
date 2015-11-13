@@ -32375,3 +32375,29 @@ Processing by CategoriesController#show as HTML
   [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
   Rendered partials/_sidebar.html.erb (6.0ms)
 Completed 200 OK in 249ms (Views: 245.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories/3" for 127.0.0.1 at 2015-11-13 13:19:45 +0200
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mCategory Load (0.0ms)[0m  SELECT  "categories".* FROM "categories"  WHERE "categories"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mPost Load (1.0ms)[0m  [1mSELECT "posts".* FROM "posts"  WHERE "posts"."category_id" = $1[0m  [["category_id", 3]]
+  Rendered categories/show.html.erb within layouts/application (3.0ms)
+  Rendered partials/_header.html.erb (251.4ms)
+  [1m[35mCategory Load (0.5ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered partials/_sidebar.html.erb (6.5ms)
+Completed 200 OK in 277ms (Views: 272.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/categories/3" for 127.0.0.1 at 2015-11-13 13:22:19 +0200
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mCategory Load (0.0ms)[0m  SELECT  "categories".* FROM "categories"  WHERE "categories"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mPost Load (1.0ms)[0m  [1mSELECT "posts".* FROM "posts"  WHERE "posts"."category_id" = $1[0m  [["category_id", 3]]
+  Rendered categories/show.html.erb within layouts/application (4.0ms)
+  Rendered partials/_header.html.erb (243.2ms)
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered partials/_sidebar.html.erb (6.0ms)
+Completed 200 OK in 270ms (Views: 266.2ms | ActiveRecord: 1.0ms)
