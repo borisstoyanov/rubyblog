@@ -12,6 +12,19 @@ ActiveAdmin.register Post do
 #   permitted << :other if resource.something?
 #   permitted
 # end
+  index do
+    column :title
+    column "Author", :admin_user
+    column :category
+    column :created_at
+    actions
 
+  end
+
+  controller do
+    def permitted_params
+      params.permit post: [:title, :body, :category_id, :author_id]
+    end
+  end
 
 end
