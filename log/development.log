@@ -29677,3 +29677,2701 @@ Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-11-13 12:37:02 +0200
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-13 12:37:02 +0200
+
+
+Started GET "/categories/3" for 127.0.0.1 at 2015-11-13 12:40:42 +0200
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories"  WHERE "categories"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mPost Load (1.0ms)[0m  SELECT "posts".* FROM "posts"  WHERE "posts"."category_id" = $1  [["category_id", 3]]
+  Rendered categories/show.html.erb within layouts/application (4.0ms)
+  Rendered partials/_header.html.erb (243.2ms)
+  [1m[36mCategory Load (1.0ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered partials/_sidebar.html.erb (5.0ms)
+Completed 200 OK in 275ms (Views: 268.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2015-11-13 12:40:42 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-13 12:40:42 +0200
+
+
+Started GET "/assets/jquery-ui/core.js?body=1" for 127.0.0.1 at 2015-11-13 12:40:42 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-13 12:40:42 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-13 12:40:42 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-13 12:40:42 +0200
+
+
+Started GET "/assets/jquery-ui/datepicker.js?body=1" for 127.0.0.1 at 2015-11-13 12:40:42 +0200
+
+
+Started GET "/assets/jquery-ui/widget.js?body=1" for 127.0.0.1 at 2015-11-13 12:40:42 +0200
+
+
+Started GET "/assets/jquery-ui/button.js?body=1" for 127.0.0.1 at 2015-11-13 12:40:42 +0200
+
+
+Started GET "/assets/jquery-ui/mouse.js?body=1" for 127.0.0.1 at 2015-11-13 12:40:42 +0200
+
+
+Started GET "/assets/jquery-ui/draggable.js?body=1" for 127.0.0.1 at 2015-11-13 12:40:42 +0200
+
+
+Started GET "/assets/jquery-ui/position.js?body=1" for 127.0.0.1 at 2015-11-13 12:40:42 +0200
+
+
+Started GET "/assets/jquery-ui/resizable.js?body=1" for 127.0.0.1 at 2015-11-13 12:40:42 +0200
+
+
+Started GET "/assets/jquery-ui/dialog.js?body=1" for 127.0.0.1 at 2015-11-13 12:40:42 +0200
+
+
+Started GET "/assets/jquery-ui/sortable.js?body=1" for 127.0.0.1 at 2015-11-13 12:40:42 +0200
+
+
+Started GET "/assets/jquery-ui/tabs.js?body=1" for 127.0.0.1 at 2015-11-13 12:40:42 +0200
+
+
+Started GET "/assets/active_admin/jquery_ui.js?body=1" for 127.0.0.1 at 2015-11-13 12:40:42 +0200
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2015-11-13 12:40:42 +0200
+
+
+Started GET "/assets/active_admin/lib/batch_actions.js?body=1" for 127.0.0.1 at 2015-11-13 12:40:43 +0200
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.js?body=1" for 127.0.0.1 at 2015-11-13 12:40:43 +0200
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.js?body=1" for 127.0.0.1 at 2015-11-13 12:40:43 +0200
+
+
+Started GET "/assets/active_admin/lib/flash.js?body=1" for 127.0.0.1 at 2015-11-13 12:40:43 +0200
+
+
+Started GET "/assets/active_admin/lib/has_many.js?body=1" for 127.0.0.1 at 2015-11-13 12:40:43 +0200
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.js?body=1" for 127.0.0.1 at 2015-11-13 12:40:43 +0200
+
+
+Started GET "/assets/active_admin/lib/per_page.js?body=1" for 127.0.0.1 at 2015-11-13 12:40:43 +0200
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.js?body=1" for 127.0.0.1 at 2015-11-13 12:40:43 +0200
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.js?body=1" for 127.0.0.1 at 2015-11-13 12:40:43 +0200
+
+
+Started GET "/assets/active_admin/ext/jquery.js?body=1" for 127.0.0.1 at 2015-11-13 12:40:43 +0200
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2015-11-13 12:40:43 +0200
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2015-11-13 12:40:43 +0200
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2015-11-13 12:40:43 +0200
+
+
+Started GET "/assets/catogories.js?body=1" for 127.0.0.1 at 2015-11-13 12:40:43 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-11-13 12:40:43 +0200
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-11-13 12:40:43 +0200
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-11-13 12:40:43 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-13 12:40:43 +0200
+
+
+Started GET "/categories/3" for 127.0.0.1 at 2015-11-13 12:41:38 +0200
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mCategory Load (1.0ms)[0m  [1mSELECT  "categories".* FROM "categories"  WHERE "categories"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts"  WHERE "posts"."category_id" = $1  [["category_id", 3]]
+  Rendered categories/show.html.erb within layouts/application (4.0ms)
+  Rendered partials/_header.html.erb (261.2ms)
+  [1m[36mCategory Load (1.0ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35mPost Load (1.0ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered partials/_sidebar.html.erb (4.0ms)
+Completed 200 OK in 292ms (Views: 285.2ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2015-11-13 12:41:39 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-13 12:41:39 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-13 12:41:39 +0200
+
+
+Started GET "/assets/jquery-ui/core.js?body=1" for 127.0.0.1 at 2015-11-13 12:41:39 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-13 12:41:39 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-13 12:41:39 +0200
+
+
+Started GET "/assets/jquery-ui/datepicker.js?body=1" for 127.0.0.1 at 2015-11-13 12:41:39 +0200
+
+
+Started GET "/assets/jquery-ui/widget.js?body=1" for 127.0.0.1 at 2015-11-13 12:41:39 +0200
+
+
+Started GET "/assets/jquery-ui/button.js?body=1" for 127.0.0.1 at 2015-11-13 12:41:39 +0200
+
+
+Started GET "/assets/jquery-ui/mouse.js?body=1" for 127.0.0.1 at 2015-11-13 12:41:39 +0200
+
+
+Started GET "/assets/jquery-ui/draggable.js?body=1" for 127.0.0.1 at 2015-11-13 12:41:39 +0200
+
+
+Started GET "/assets/jquery-ui/position.js?body=1" for 127.0.0.1 at 2015-11-13 12:41:39 +0200
+
+
+Started GET "/assets/jquery-ui/resizable.js?body=1" for 127.0.0.1 at 2015-11-13 12:41:39 +0200
+
+
+Started GET "/assets/jquery-ui/dialog.js?body=1" for 127.0.0.1 at 2015-11-13 12:41:39 +0200
+
+
+Started GET "/assets/jquery-ui/sortable.js?body=1" for 127.0.0.1 at 2015-11-13 12:41:39 +0200
+
+
+Started GET "/assets/jquery-ui/tabs.js?body=1" for 127.0.0.1 at 2015-11-13 12:41:39 +0200
+
+
+Started GET "/assets/active_admin/jquery_ui.js?body=1" for 127.0.0.1 at 2015-11-13 12:41:39 +0200
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2015-11-13 12:41:39 +0200
+
+
+Started GET "/assets/active_admin/lib/batch_actions.js?body=1" for 127.0.0.1 at 2015-11-13 12:41:39 +0200
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.js?body=1" for 127.0.0.1 at 2015-11-13 12:41:39 +0200
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.js?body=1" for 127.0.0.1 at 2015-11-13 12:41:39 +0200
+
+
+Started GET "/assets/active_admin/lib/flash.js?body=1" for 127.0.0.1 at 2015-11-13 12:41:39 +0200
+
+
+Started GET "/assets/active_admin/lib/has_many.js?body=1" for 127.0.0.1 at 2015-11-13 12:41:39 +0200
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.js?body=1" for 127.0.0.1 at 2015-11-13 12:41:39 +0200
+
+
+Started GET "/assets/active_admin/lib/per_page.js?body=1" for 127.0.0.1 at 2015-11-13 12:41:39 +0200
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.js?body=1" for 127.0.0.1 at 2015-11-13 12:41:39 +0200
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.js?body=1" for 127.0.0.1 at 2015-11-13 12:41:39 +0200
+
+
+Started GET "/assets/active_admin/ext/jquery.js?body=1" for 127.0.0.1 at 2015-11-13 12:41:39 +0200
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2015-11-13 12:41:39 +0200
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2015-11-13 12:41:39 +0200
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2015-11-13 12:41:39 +0200
+
+
+Started GET "/assets/catogories.js?body=1" for 127.0.0.1 at 2015-11-13 12:41:39 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-11-13 12:41:39 +0200
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-11-13 12:41:39 +0200
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-11-13 12:41:39 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-13 12:41:39 +0200
+
+
+Started GET "/posts/4" for 127.0.0.1 at 2015-11-13 12:42:30 +0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35mCategory Load (0.0ms)[0m  SELECT  "categories".* FROM "categories"  WHERE "categories"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered posts/show.html.erb within layouts/application (4.0ms)
+  Rendered partials/_header.html.erb (234.2ms)
+  [1m[36mCategory Load (1.0ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35mPost Load (1.0ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered partials/_sidebar.html.erb (4.0ms)
+Completed 200 OK in 256ms (Views: 252.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/categories/3" for 127.0.0.1 at 2015-11-13 12:42:34 +0200
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories"  WHERE "categories"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts"  WHERE "posts"."category_id" = $1  [["category_id", 3]]
+  Rendered categories/show.html.erb within layouts/application (3.0ms)
+  Rendered partials/_header.html.erb (222.2ms)
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered partials/_sidebar.html.erb (4.0ms)
+Completed 200 OK in 242ms (Views: 239.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories/3" for 127.0.0.1 at 2015-11-13 12:43:25 +0200
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mCategory Load (1.0ms)[0m  [1mSELECT  "categories".* FROM "categories"  WHERE "categories"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mPost Load (1.0ms)[0m  SELECT "posts".* FROM "posts"  WHERE "posts"."category_id" = $1  [["category_id", 3]]
+  Rendered categories/show.html.erb within layouts/application (3.0ms)
+  Rendered partials/_header.html.erb (244.2ms)
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35mPost Load (1.0ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered partials/_sidebar.html.erb (5.0ms)
+Completed 200 OK in 271ms (Views: 265.2ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2015-11-13 12:43:26 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-13 12:43:26 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-13 12:43:26 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-13 12:43:26 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-13 12:43:26 +0200
+
+
+Started GET "/assets/jquery-ui/core.js?body=1" for 127.0.0.1 at 2015-11-13 12:43:26 +0200
+
+
+Started GET "/assets/jquery-ui/datepicker.js?body=1" for 127.0.0.1 at 2015-11-13 12:43:26 +0200
+
+
+Started GET "/assets/jquery-ui/widget.js?body=1" for 127.0.0.1 at 2015-11-13 12:43:26 +0200
+
+
+Started GET "/assets/jquery-ui/button.js?body=1" for 127.0.0.1 at 2015-11-13 12:43:26 +0200
+
+
+Started GET "/assets/jquery-ui/mouse.js?body=1" for 127.0.0.1 at 2015-11-13 12:43:26 +0200
+
+
+Started GET "/assets/jquery-ui/draggable.js?body=1" for 127.0.0.1 at 2015-11-13 12:43:26 +0200
+
+
+Started GET "/assets/jquery-ui/position.js?body=1" for 127.0.0.1 at 2015-11-13 12:43:26 +0200
+
+
+Started GET "/assets/jquery-ui/resizable.js?body=1" for 127.0.0.1 at 2015-11-13 12:43:26 +0200
+
+
+Started GET "/assets/jquery-ui/dialog.js?body=1" for 127.0.0.1 at 2015-11-13 12:43:26 +0200
+
+
+Started GET "/assets/jquery-ui/sortable.js?body=1" for 127.0.0.1 at 2015-11-13 12:43:26 +0200
+
+
+Started GET "/assets/jquery-ui/tabs.js?body=1" for 127.0.0.1 at 2015-11-13 12:43:26 +0200
+
+
+Started GET "/assets/active_admin/jquery_ui.js?body=1" for 127.0.0.1 at 2015-11-13 12:43:26 +0200
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2015-11-13 12:43:26 +0200
+
+
+Started GET "/assets/active_admin/lib/batch_actions.js?body=1" for 127.0.0.1 at 2015-11-13 12:43:26 +0200
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.js?body=1" for 127.0.0.1 at 2015-11-13 12:43:26 +0200
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.js?body=1" for 127.0.0.1 at 2015-11-13 12:43:26 +0200
+
+
+Started GET "/assets/active_admin/lib/flash.js?body=1" for 127.0.0.1 at 2015-11-13 12:43:26 +0200
+
+
+Started GET "/assets/active_admin/lib/has_many.js?body=1" for 127.0.0.1 at 2015-11-13 12:43:26 +0200
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.js?body=1" for 127.0.0.1 at 2015-11-13 12:43:26 +0200
+
+
+Started GET "/assets/active_admin/lib/per_page.js?body=1" for 127.0.0.1 at 2015-11-13 12:43:26 +0200
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.js?body=1" for 127.0.0.1 at 2015-11-13 12:43:26 +0200
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.js?body=1" for 127.0.0.1 at 2015-11-13 12:43:26 +0200
+
+
+Started GET "/assets/active_admin/ext/jquery.js?body=1" for 127.0.0.1 at 2015-11-13 12:43:26 +0200
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2015-11-13 12:43:26 +0200
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2015-11-13 12:43:26 +0200
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2015-11-13 12:43:26 +0200
+
+
+Started GET "/assets/catogories.js?body=1" for 127.0.0.1 at 2015-11-13 12:43:26 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-11-13 12:43:26 +0200
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-11-13 12:43:26 +0200
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-11-13 12:43:26 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-13 12:43:26 +0200
+
+
+Started GET "/contact" for 127.0.0.1 at 2015-11-13 12:43:35 +0200
+Processing by PagesController#contact as HTML
+  Rendered pages/contact.html.erb within layouts/application (0.5ms)
+  Rendered partials/_header.html.erb (243.2ms)
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered partials/_sidebar.html.erb (5.0ms)
+Completed 200 OK in 261ms (Views: 259.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2015-11-13 12:44:34 +0200
+Processing by PagesController#contact as HTML
+  Rendered pages/contact.html.erb within layouts/application (0.0ms)
+  Rendered partials/_header.html.erb (245.1ms)
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered partials/_sidebar.html.erb (5.0ms)
+Completed 200 OK in 264ms (Views: 263.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2015-11-13 12:44:34 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-13 12:44:35 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-13 12:44:35 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-13 12:44:35 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-13 12:44:35 +0200
+
+
+Started GET "/assets/jquery-ui/core.js?body=1" for 127.0.0.1 at 2015-11-13 12:44:35 +0200
+
+
+Started GET "/assets/jquery-ui/datepicker.js?body=1" for 127.0.0.1 at 2015-11-13 12:44:35 +0200
+
+
+Started GET "/assets/jquery-ui/widget.js?body=1" for 127.0.0.1 at 2015-11-13 12:44:35 +0200
+
+
+Started GET "/assets/jquery-ui/button.js?body=1" for 127.0.0.1 at 2015-11-13 12:44:35 +0200
+
+
+Started GET "/assets/jquery-ui/mouse.js?body=1" for 127.0.0.1 at 2015-11-13 12:44:35 +0200
+
+
+Started GET "/assets/jquery-ui/draggable.js?body=1" for 127.0.0.1 at 2015-11-13 12:44:35 +0200
+
+
+Started GET "/assets/jquery-ui/position.js?body=1" for 127.0.0.1 at 2015-11-13 12:44:35 +0200
+
+
+Started GET "/assets/jquery-ui/resizable.js?body=1" for 127.0.0.1 at 2015-11-13 12:44:35 +0200
+
+
+Started GET "/assets/jquery-ui/dialog.js?body=1" for 127.0.0.1 at 2015-11-13 12:44:35 +0200
+
+
+Started GET "/assets/jquery-ui/sortable.js?body=1" for 127.0.0.1 at 2015-11-13 12:44:35 +0200
+
+
+Started GET "/assets/jquery-ui/tabs.js?body=1" for 127.0.0.1 at 2015-11-13 12:44:35 +0200
+
+
+Started GET "/assets/active_admin/jquery_ui.js?body=1" for 127.0.0.1 at 2015-11-13 12:44:35 +0200
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2015-11-13 12:44:35 +0200
+
+
+Started GET "/assets/active_admin/lib/batch_actions.js?body=1" for 127.0.0.1 at 2015-11-13 12:44:35 +0200
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.js?body=1" for 127.0.0.1 at 2015-11-13 12:44:35 +0200
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.js?body=1" for 127.0.0.1 at 2015-11-13 12:44:35 +0200
+
+
+Started GET "/assets/active_admin/lib/flash.js?body=1" for 127.0.0.1 at 2015-11-13 12:44:35 +0200
+
+
+Started GET "/assets/active_admin/lib/has_many.js?body=1" for 127.0.0.1 at 2015-11-13 12:44:35 +0200
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.js?body=1" for 127.0.0.1 at 2015-11-13 12:44:35 +0200
+
+
+Started GET "/assets/active_admin/lib/per_page.js?body=1" for 127.0.0.1 at 2015-11-13 12:44:35 +0200
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.js?body=1" for 127.0.0.1 at 2015-11-13 12:44:35 +0200
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.js?body=1" for 127.0.0.1 at 2015-11-13 12:44:35 +0200
+
+
+Started GET "/assets/active_admin/ext/jquery.js?body=1" for 127.0.0.1 at 2015-11-13 12:44:35 +0200
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2015-11-13 12:44:35 +0200
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2015-11-13 12:44:35 +0200
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2015-11-13 12:44:35 +0200
+
+
+Started GET "/assets/catogories.js?body=1" for 127.0.0.1 at 2015-11-13 12:44:35 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-11-13 12:44:35 +0200
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-11-13 12:44:35 +0200
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-11-13 12:44:35 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-13 12:44:35 +0200
+
+
+Started GET "/contact" for 127.0.0.1 at 2015-11-13 12:46:06 +0200
+Processing by PagesController#contact as HTML
+  Rendered pages/contact.html.erb within layouts/application (0.0ms)
+  Rendered partials/_header.html.erb (245.2ms)
+  [1m[36mCategory Load (1.0ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered partials/_sidebar.html.erb (5.0ms)
+Completed 200 OK in 265ms (Views: 263.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2015-11-13 12:46:06 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-13 12:46:06 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-13 12:46:06 +0200
+
+
+Started GET "/assets/jquery-ui/core.js?body=1" for 127.0.0.1 at 2015-11-13 12:46:07 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-13 12:46:07 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-13 12:46:07 +0200
+
+
+Started GET "/assets/jquery-ui/datepicker.js?body=1" for 127.0.0.1 at 2015-11-13 12:46:07 +0200
+
+
+Started GET "/assets/jquery-ui/widget.js?body=1" for 127.0.0.1 at 2015-11-13 12:46:07 +0200
+
+
+Started GET "/assets/jquery-ui/button.js?body=1" for 127.0.0.1 at 2015-11-13 12:46:07 +0200
+
+
+Started GET "/assets/jquery-ui/mouse.js?body=1" for 127.0.0.1 at 2015-11-13 12:46:07 +0200
+
+
+Started GET "/assets/jquery-ui/draggable.js?body=1" for 127.0.0.1 at 2015-11-13 12:46:07 +0200
+
+
+Started GET "/assets/jquery-ui/position.js?body=1" for 127.0.0.1 at 2015-11-13 12:46:07 +0200
+
+
+Started GET "/assets/jquery-ui/resizable.js?body=1" for 127.0.0.1 at 2015-11-13 12:46:07 +0200
+
+
+Started GET "/assets/jquery-ui/dialog.js?body=1" for 127.0.0.1 at 2015-11-13 12:46:07 +0200
+
+
+Started GET "/assets/jquery-ui/sortable.js?body=1" for 127.0.0.1 at 2015-11-13 12:46:07 +0200
+
+
+Started GET "/assets/jquery-ui/tabs.js?body=1" for 127.0.0.1 at 2015-11-13 12:46:07 +0200
+
+
+Started GET "/assets/active_admin/jquery_ui.js?body=1" for 127.0.0.1 at 2015-11-13 12:46:07 +0200
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2015-11-13 12:46:07 +0200
+
+
+Started GET "/assets/active_admin/lib/batch_actions.js?body=1" for 127.0.0.1 at 2015-11-13 12:46:07 +0200
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.js?body=1" for 127.0.0.1 at 2015-11-13 12:46:07 +0200
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.js?body=1" for 127.0.0.1 at 2015-11-13 12:46:07 +0200
+
+
+Started GET "/assets/active_admin/lib/flash.js?body=1" for 127.0.0.1 at 2015-11-13 12:46:07 +0200
+
+
+Started GET "/assets/active_admin/lib/has_many.js?body=1" for 127.0.0.1 at 2015-11-13 12:46:07 +0200
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.js?body=1" for 127.0.0.1 at 2015-11-13 12:46:07 +0200
+
+
+Started GET "/assets/active_admin/lib/per_page.js?body=1" for 127.0.0.1 at 2015-11-13 12:46:07 +0200
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.js?body=1" for 127.0.0.1 at 2015-11-13 12:46:07 +0200
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.js?body=1" for 127.0.0.1 at 2015-11-13 12:46:07 +0200
+
+
+Started GET "/assets/active_admin/ext/jquery.js?body=1" for 127.0.0.1 at 2015-11-13 12:46:07 +0200
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2015-11-13 12:46:07 +0200
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2015-11-13 12:46:07 +0200
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2015-11-13 12:46:07 +0200
+
+
+Started GET "/assets/catogories.js?body=1" for 127.0.0.1 at 2015-11-13 12:46:07 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-11-13 12:46:07 +0200
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-11-13 12:46:07 +0200
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-11-13 12:46:07 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-13 12:46:07 +0200
+
+
+Started GET "/posts/11" for 127.0.0.1 at 2015-11-13 12:46:44 +0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 11]]
+  [1m[35mCategory Load (0.0ms)[0m  SELECT  "categories".* FROM "categories"  WHERE "categories"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered posts/show.html.erb within layouts/application (3.0ms)
+  Rendered partials/_header.html.erb (228.7ms)
+  [1m[36mCategory Load (0.5ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered partials/_sidebar.html.erb (5.0ms)
+Completed 200 OK in 252ms (Views: 248.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/categories/1" for 127.0.0.1 at 2015-11-13 12:47:52 +0200
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories"  WHERE "categories"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts"  WHERE "posts"."category_id" = $1  [["category_id", 1]]
+  Rendered categories/show.html.erb within layouts/application (4.0ms)
+  Rendered partials/_header.html.erb (234.2ms)
+  [1m[36mCategory Load (1.0ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered partials/_sidebar.html.erb (5.0ms)
+Completed 200 OK in 260ms (Views: 255.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/categories/2" for 127.0.0.1 at 2015-11-13 12:48:04 +0200
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories"  WHERE "categories"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mPost Load (1.0ms)[0m  SELECT "posts".* FROM "posts"  WHERE "posts"."category_id" = $1  [["category_id", 2]]
+  Rendered categories/show.html.erb within layouts/application (1.0ms)
+  Rendered partials/_header.html.erb (228.9ms)
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered partials/_sidebar.html.erb (4.0ms)
+Completed 200 OK in 246ms (Views: 242.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/categories/2" for 127.0.0.1 at 2015-11-13 12:49:29 +0200
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories"  WHERE "categories"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Completed 404 Not Found in 5ms
+
+ActiveRecord::RecordNotFound (Couldn't find Category with 'id'=2):
+  app/controllers/categories_controller.rb:13:in `set_category'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.5ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (33.5ms)
+
+
+Started GET "/categories/2" for 127.0.0.1 at 2015-11-13 12:51:34 +0200
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mCategory Load (1.0ms)[0m  SELECT  "categories".* FROM "categories"  WHERE "categories"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mPost Load (1.0ms)[0m  [1mSELECT "posts".* FROM "posts"  WHERE "posts"."category_id" = $1[0m  [["category_id", 2]]
+  Rendered categories/show.html.erb within layouts/application (2.0ms)
+  Rendered partials/_header.html.erb (251.2ms)
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mPost Load (1.0ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered partials/_sidebar.html.erb (6.0ms)
+Completed 200 OK in 275ms (Views: 269.2ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-13 12:51:34 +0200
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2015-11-13 12:51:34 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-13 12:51:34 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-13 12:51:34 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-13 12:51:34 +0200
+
+
+Started GET "/assets/jquery-ui/core.js?body=1" for 127.0.0.1 at 2015-11-13 12:51:34 +0200
+
+
+Started GET "/assets/jquery-ui/datepicker.js?body=1" for 127.0.0.1 at 2015-11-13 12:51:34 +0200
+
+
+Started GET "/assets/jquery-ui/widget.js?body=1" for 127.0.0.1 at 2015-11-13 12:51:34 +0200
+
+
+Started GET "/assets/jquery-ui/button.js?body=1" for 127.0.0.1 at 2015-11-13 12:51:34 +0200
+
+
+Started GET "/assets/jquery-ui/mouse.js?body=1" for 127.0.0.1 at 2015-11-13 12:51:34 +0200
+
+
+Started GET "/assets/jquery-ui/draggable.js?body=1" for 127.0.0.1 at 2015-11-13 12:51:34 +0200
+
+
+Started GET "/assets/jquery-ui/position.js?body=1" for 127.0.0.1 at 2015-11-13 12:51:34 +0200
+
+
+Started GET "/assets/jquery-ui/resizable.js?body=1" for 127.0.0.1 at 2015-11-13 12:51:34 +0200
+
+
+Started GET "/assets/jquery-ui/dialog.js?body=1" for 127.0.0.1 at 2015-11-13 12:51:34 +0200
+
+
+Started GET "/assets/jquery-ui/sortable.js?body=1" for 127.0.0.1 at 2015-11-13 12:51:34 +0200
+
+
+Started GET "/assets/jquery-ui/tabs.js?body=1" for 127.0.0.1 at 2015-11-13 12:51:34 +0200
+
+
+Started GET "/assets/active_admin/jquery_ui.js?body=1" for 127.0.0.1 at 2015-11-13 12:51:34 +0200
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2015-11-13 12:51:34 +0200
+
+
+Started GET "/assets/active_admin/lib/batch_actions.js?body=1" for 127.0.0.1 at 2015-11-13 12:51:34 +0200
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.js?body=1" for 127.0.0.1 at 2015-11-13 12:51:34 +0200
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.js?body=1" for 127.0.0.1 at 2015-11-13 12:51:34 +0200
+
+
+Started GET "/assets/active_admin/lib/flash.js?body=1" for 127.0.0.1 at 2015-11-13 12:51:34 +0200
+
+
+Started GET "/assets/active_admin/lib/has_many.js?body=1" for 127.0.0.1 at 2015-11-13 12:51:34 +0200
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.js?body=1" for 127.0.0.1 at 2015-11-13 12:51:34 +0200
+
+
+Started GET "/assets/active_admin/lib/per_page.js?body=1" for 127.0.0.1 at 2015-11-13 12:51:34 +0200
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.js?body=1" for 127.0.0.1 at 2015-11-13 12:51:34 +0200
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.js?body=1" for 127.0.0.1 at 2015-11-13 12:51:34 +0200
+
+
+Started GET "/assets/active_admin/ext/jquery.js?body=1" for 127.0.0.1 at 2015-11-13 12:51:34 +0200
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2015-11-13 12:51:34 +0200
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2015-11-13 12:51:34 +0200
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2015-11-13 12:51:34 +0200
+
+
+Started GET "/assets/catogories.js?body=1" for 127.0.0.1 at 2015-11-13 12:51:34 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-11-13 12:51:34 +0200
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-11-13 12:51:34 +0200
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-11-13 12:51:34 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-13 12:51:34 +0200
+
+
+Started GET "/assets/images/img01.jpg" for 127.0.0.1 at 2015-11-13 12:51:35 +0200
+
+ActionController::RoutingError (No route matches [GET] "/assets/images/img01.jpg"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.5ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (53.5ms)
+
+
+Started GET "/assets/images/img03.jpg" for 127.0.0.1 at 2015-11-13 12:51:35 +0200
+
+ActionController::RoutingError (No route matches [GET] "/assets/images/img03.jpg"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (54.0ms)
+
+
+Started GET "/categories/2" for 127.0.0.1 at 2015-11-13 12:51:37 +0200
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mCategory Load (1.0ms)[0m  SELECT  "categories".* FROM "categories"  WHERE "categories"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts"  WHERE "posts"."category_id" = $1[0m  [["category_id", 2]]
+  Rendered categories/show.html.erb within layouts/application (2.0ms)
+  Rendered partials/_header.html.erb (229.2ms)
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered partials/_sidebar.html.erb (5.0ms)
+Completed 200 OK in 251ms (Views: 247.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/categories/3" for 127.0.0.1 at 2015-11-13 12:51:42 +0200
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mCategory Load (0.0ms)[0m  SELECT  "categories".* FROM "categories"  WHERE "categories"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mPost Load (1.0ms)[0m  [1mSELECT "posts".* FROM "posts"  WHERE "posts"."category_id" = $1[0m  [["category_id", 3]]
+  Rendered categories/show.html.erb within layouts/application (3.0ms)
+  Rendered partials/_header.html.erb (235.3ms)
+  [1m[35mCategory Load (1.0ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mPost Load (1.0ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered partials/_sidebar.html.erb (5.0ms)
+Completed 200 OK in 256ms (Views: 251.3ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/images/page-gradient-bg.png" for 127.0.0.1 at 2015-11-13 12:51:43 +0200
+
+ActionController::RoutingError (No route matches [GET] "/assets/images/page-gradient-bg.png"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.5ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.5ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (51.0ms)
+
+
+Started GET "/categories/3" for 127.0.0.1 at 2015-11-13 12:51:50 +0200
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mCategory Load (0.0ms)[0m  SELECT  "categories".* FROM "categories"  WHERE "categories"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mPost Load (1.0ms)[0m  [1mSELECT "posts".* FROM "posts"  WHERE "posts"."category_id" = $1[0m  [["category_id", 3]]
+  Rendered categories/show.html.erb within layouts/application (3.0ms)
+  Rendered partials/_header.html.erb (232.9ms)
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered partials/_sidebar.html.erb (3.0ms)
+Completed 200 OK in 254ms (Views: 249.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/categories/3" for 127.0.0.1 at 2015-11-13 12:55:50 +0200
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mCategory Load (0.0ms)[0m  SELECT  "categories".* FROM "categories"  WHERE "categories"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts"  WHERE "posts"."category_id" = $1[0m  [["category_id", 3]]
+  Rendered categories/show.html.erb within layouts/application (11.0ms)
+  Rendered partials/_header.html.erb (245.2ms)
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mPost Load (1.0ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered partials/_sidebar.html.erb (4.0ms)
+Completed 200 OK in 277ms (Views: 272.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2015-11-13 12:55:50 +0200
+
+
+Started GET "/assets/jquery-ui/core.js?body=1" for 127.0.0.1 at 2015-11-13 12:55:50 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-13 12:55:50 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-13 12:55:50 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-13 12:55:50 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-13 12:55:50 +0200
+
+
+Started GET "/assets/jquery-ui/datepicker.js?body=1" for 127.0.0.1 at 2015-11-13 12:55:50 +0200
+
+
+Started GET "/assets/jquery-ui/widget.js?body=1" for 127.0.0.1 at 2015-11-13 12:55:50 +0200
+
+
+Started GET "/assets/jquery-ui/button.js?body=1" for 127.0.0.1 at 2015-11-13 12:55:51 +0200
+
+
+Started GET "/assets/jquery-ui/mouse.js?body=1" for 127.0.0.1 at 2015-11-13 12:55:51 +0200
+
+
+Started GET "/assets/jquery-ui/draggable.js?body=1" for 127.0.0.1 at 2015-11-13 12:55:51 +0200
+
+
+Started GET "/assets/jquery-ui/position.js?body=1" for 127.0.0.1 at 2015-11-13 12:55:51 +0200
+
+
+Started GET "/assets/jquery-ui/resizable.js?body=1" for 127.0.0.1 at 2015-11-13 12:55:51 +0200
+
+
+Started GET "/assets/jquery-ui/dialog.js?body=1" for 127.0.0.1 at 2015-11-13 12:55:51 +0200
+
+
+Started GET "/assets/jquery-ui/sortable.js?body=1" for 127.0.0.1 at 2015-11-13 12:55:51 +0200
+
+
+Started GET "/assets/jquery-ui/tabs.js?body=1" for 127.0.0.1 at 2015-11-13 12:55:51 +0200
+
+
+Started GET "/assets/active_admin/jquery_ui.js?body=1" for 127.0.0.1 at 2015-11-13 12:55:51 +0200
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2015-11-13 12:55:51 +0200
+
+
+Started GET "/assets/active_admin/lib/batch_actions.js?body=1" for 127.0.0.1 at 2015-11-13 12:55:51 +0200
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.js?body=1" for 127.0.0.1 at 2015-11-13 12:55:51 +0200
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.js?body=1" for 127.0.0.1 at 2015-11-13 12:55:51 +0200
+
+
+Started GET "/assets/active_admin/lib/flash.js?body=1" for 127.0.0.1 at 2015-11-13 12:55:51 +0200
+
+
+Started GET "/assets/active_admin/lib/has_many.js?body=1" for 127.0.0.1 at 2015-11-13 12:55:51 +0200
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.js?body=1" for 127.0.0.1 at 2015-11-13 12:55:51 +0200
+
+
+Started GET "/assets/active_admin/lib/per_page.js?body=1" for 127.0.0.1 at 2015-11-13 12:55:51 +0200
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.js?body=1" for 127.0.0.1 at 2015-11-13 12:55:51 +0200
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.js?body=1" for 127.0.0.1 at 2015-11-13 12:55:51 +0200
+
+
+Started GET "/assets/active_admin/ext/jquery.js?body=1" for 127.0.0.1 at 2015-11-13 12:55:51 +0200
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2015-11-13 12:55:51 +0200
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2015-11-13 12:55:51 +0200
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2015-11-13 12:55:51 +0200
+
+
+Started GET "/assets/catogories.js?body=1" for 127.0.0.1 at 2015-11-13 12:55:51 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-11-13 12:55:51 +0200
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-11-13 12:55:51 +0200
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-11-13 12:55:51 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-13 12:55:51 +0200
+
+
+Started GET "/categories/3" for 127.0.0.1 at 2015-11-13 12:56:04 +0200
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mCategory Load (0.0ms)[0m  SELECT  "categories".* FROM "categories"  WHERE "categories"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts"  WHERE "posts"."category_id" = $1[0m  [["category_id", 3]]
+  Rendered categories/show.html.erb within layouts/application (3.0ms)
+  Rendered partials/_header.html.erb (230.2ms)
+  [1m[35mCategory Load (1.0ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered partials/_sidebar.html.erb (5.0ms)
+Completed 200 OK in 253ms (Views: 249.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/categories/3" for 127.0.0.1 at 2015-11-13 12:56:05 +0200
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mCategory Load (1.0ms)[0m  SELECT  "categories".* FROM "categories"  WHERE "categories"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts"  WHERE "posts"."category_id" = $1[0m  [["category_id", 3]]
+  Rendered categories/show.html.erb within layouts/application (3.0ms)
+  Rendered partials/_header.html.erb (221.3ms)
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered partials/_sidebar.html.erb (3.0ms)
+Completed 200 OK in 240ms (Views: 237.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/categories/4" for 127.0.0.1 at 2015-11-13 12:56:06 +0200
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mCategory Load (0.0ms)[0m  SELECT  "categories".* FROM "categories"  WHERE "categories"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts"  WHERE "posts"."category_id" = $1[0m  [["category_id", 4]]
+  Rendered categories/show.html.erb within layouts/application (2.0ms)
+  Rendered partials/_header.html.erb (228.2ms)
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mPost Load (1.0ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered partials/_sidebar.html.erb (5.0ms)
+Completed 200 OK in 249ms (Views: 245.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/categories/4" for 127.0.0.1 at 2015-11-13 12:58:10 +0200
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mCategory Load (0.0ms)[0m  SELECT  "categories".* FROM "categories"  WHERE "categories"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts"  WHERE "posts"."category_id" = $1[0m  [["category_id", 4]]
+  Rendered categories/show.html.erb within layouts/application (9.0ms)
+  Rendered partials/_header.html.erb (226.7ms)
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mPost Load (1.0ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered partials/_sidebar.html.erb (5.0ms)
+Completed 200 OK in 260ms (Views: 254.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/categories/2" for 127.0.0.1 at 2015-11-13 12:58:19 +0200
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mCategory Load (0.0ms)[0m  SELECT  "categories".* FROM "categories"  WHERE "categories"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts"  WHERE "posts"."category_id" = $1[0m  [["category_id", 2]]
+  Rendered categories/show.html.erb within layouts/application (2.0ms)
+  Rendered partials/_header.html.erb (232.6ms)
+  [1m[35mCategory Load (1.0ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered partials/_sidebar.html.erb (5.0ms)
+Completed 200 OK in 254ms (Views: 248.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/categories/2" for 127.0.0.1 at 2015-11-13 13:01:42 +0200
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mCategory Load (0.0ms)[0m  SELECT  "categories".* FROM "categories"  WHERE "categories"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts"  WHERE "posts"."category_id" = $1[0m  [["category_id", 2]]
+  Rendered categories/show.html.erb within layouts/application (3.0ms)
+  Rendered partials/_header.html.erb (231.9ms)
+  [1m[35mCategory Load (0.5ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered partials/_sidebar.html.erb (5.0ms)
+Completed 200 OK in 257ms (Views: 251.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/categories/2" for 127.0.0.1 at 2015-11-13 13:02:09 +0200
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mCategory Load (1.0ms)[0m  SELECT  "categories".* FROM "categories"  WHERE "categories"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts"  WHERE "posts"."category_id" = $1[0m  [["category_id", 2]]
+  Rendered categories/show.html.erb within layouts/application (2.0ms)
+  Rendered partials/_header.html.erb (230.6ms)
+  [1m[35mCategory Load (1.0ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered partials/_sidebar.html.erb (4.0ms)
+Completed 200 OK in 251ms (Views: 245.6ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/categories/2" for 127.0.0.1 at 2015-11-13 13:02:11 +0200
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mCategory Load (0.0ms)[0m  SELECT  "categories".* FROM "categories"  WHERE "categories"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mPost Load (1.0ms)[0m  [1mSELECT "posts".* FROM "posts"  WHERE "posts"."category_id" = $1[0m  [["category_id", 2]]
+  Rendered categories/show.html.erb within layouts/application (2.0ms)
+  Rendered partials/_header.html.erb (226.2ms)
+  [1m[35mCategory Load (1.0ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered partials/_sidebar.html.erb (6.0ms)
+Completed 200 OK in 247ms (Views: 243.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/categories/4" for 127.0.0.1 at 2015-11-13 13:02:12 +0200
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mCategory Load (1.0ms)[0m  SELECT  "categories".* FROM "categories"  WHERE "categories"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mPost Load (1.0ms)[0m  [1mSELECT "posts".* FROM "posts"  WHERE "posts"."category_id" = $1[0m  [["category_id", 4]]
+  Rendered categories/show.html.erb within layouts/application (3.0ms)
+  Rendered partials/_header.html.erb (223.5ms)
+  [1m[35mCategory Load (1.0ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mPost Load (1.0ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered partials/_sidebar.html.erb (6.0ms)
+Completed 200 OK in 246ms (Views: 241.5ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/categories/2" for 127.0.0.1 at 2015-11-13 13:02:34 +0200
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mCategory Load (0.0ms)[0m  SELECT  "categories".* FROM "categories"  WHERE "categories"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts"  WHERE "posts"."category_id" = $1[0m  [["category_id", 2]]
+  Rendered categories/show.html.erb within layouts/application (2.0ms)
+  Rendered partials/_header.html.erb (220.2ms)
+  [1m[35mCategory Load (1.0ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered partials/_sidebar.html.erb (6.0ms)
+Completed 200 OK in 241ms (Views: 237.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/categories/2" for 127.0.0.1 at 2015-11-13 13:04:48 +0200
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mCategory Load (0.0ms)[0m  SELECT  "categories".* FROM "categories"  WHERE "categories"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mPost Load (1.0ms)[0m  [1mSELECT "posts".* FROM "posts"  WHERE "posts"."category_id" = $1[0m  [["category_id", 2]]
+  Rendered categories/show.html.erb within layouts/application (5.0ms)
+  Rendered partials/_header.html.erb (245.2ms)
+  [1m[35mCategory Load (1.0ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered partials/_sidebar.html.erb (5.0ms)
+Completed 200 OK in 276ms (Views: 269.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-13 13:04:48 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-13 13:04:48 +0200
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2015-11-13 13:04:48 +0200
+
+
+Started GET "/assets/jquery-ui/core.js?body=1" for 127.0.0.1 at 2015-11-13 13:04:48 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-13 13:04:48 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-13 13:04:48 +0200
+
+
+Started GET "/assets/jquery-ui/datepicker.js?body=1" for 127.0.0.1 at 2015-11-13 13:04:48 +0200
+
+
+Started GET "/assets/jquery-ui/widget.js?body=1" for 127.0.0.1 at 2015-11-13 13:04:48 +0200
+
+
+Started GET "/assets/jquery-ui/button.js?body=1" for 127.0.0.1 at 2015-11-13 13:04:48 +0200
+
+
+Started GET "/assets/jquery-ui/mouse.js?body=1" for 127.0.0.1 at 2015-11-13 13:04:48 +0200
+
+
+Started GET "/assets/jquery-ui/draggable.js?body=1" for 127.0.0.1 at 2015-11-13 13:04:48 +0200
+
+
+Started GET "/assets/jquery-ui/position.js?body=1" for 127.0.0.1 at 2015-11-13 13:04:48 +0200
+
+
+Started GET "/assets/jquery-ui/resizable.js?body=1" for 127.0.0.1 at 2015-11-13 13:04:48 +0200
+
+
+Started GET "/assets/jquery-ui/dialog.js?body=1" for 127.0.0.1 at 2015-11-13 13:04:48 +0200
+
+
+Started GET "/assets/jquery-ui/sortable.js?body=1" for 127.0.0.1 at 2015-11-13 13:04:48 +0200
+
+
+Started GET "/assets/jquery-ui/tabs.js?body=1" for 127.0.0.1 at 2015-11-13 13:04:48 +0200
+
+
+Started GET "/assets/active_admin/jquery_ui.js?body=1" for 127.0.0.1 at 2015-11-13 13:04:48 +0200
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2015-11-13 13:04:48 +0200
+
+
+Started GET "/assets/active_admin/lib/batch_actions.js?body=1" for 127.0.0.1 at 2015-11-13 13:04:48 +0200
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.js?body=1" for 127.0.0.1 at 2015-11-13 13:04:48 +0200
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.js?body=1" for 127.0.0.1 at 2015-11-13 13:04:48 +0200
+
+
+Started GET "/assets/active_admin/lib/flash.js?body=1" for 127.0.0.1 at 2015-11-13 13:04:48 +0200
+
+
+Started GET "/assets/active_admin/lib/has_many.js?body=1" for 127.0.0.1 at 2015-11-13 13:04:48 +0200
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.js?body=1" for 127.0.0.1 at 2015-11-13 13:04:48 +0200
+
+
+Started GET "/assets/active_admin/lib/per_page.js?body=1" for 127.0.0.1 at 2015-11-13 13:04:48 +0200
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.js?body=1" for 127.0.0.1 at 2015-11-13 13:04:48 +0200
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.js?body=1" for 127.0.0.1 at 2015-11-13 13:04:48 +0200
+
+
+Started GET "/assets/active_admin/ext/jquery.js?body=1" for 127.0.0.1 at 2015-11-13 13:04:48 +0200
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2015-11-13 13:04:48 +0200
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2015-11-13 13:04:48 +0200
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2015-11-13 13:04:48 +0200
+
+
+Started GET "/assets/catogories.js?body=1" for 127.0.0.1 at 2015-11-13 13:04:48 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-11-13 13:04:48 +0200
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-11-13 13:04:48 +0200
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-11-13 13:04:48 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-13 13:04:48 +0200
+
+
+Started GET "/categories/2" for 127.0.0.1 at 2015-11-13 13:07:02 +0200
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mCategory Load (0.5ms)[0m  SELECT  "categories".* FROM "categories"  WHERE "categories"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts"  WHERE "posts"."category_id" = $1[0m  [["category_id", 2]]
+  Rendered categories/show.html.erb within layouts/application (4.0ms)
+  Rendered partials/_header.html.erb (248.7ms)
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered partials/_sidebar.html.erb (5.0ms)
+Completed 200 OK in 276ms (Views: 271.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2015-11-13 13:07:02 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-13 13:07:02 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-13 13:07:02 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-13 13:07:02 +0200
+
+
+Started GET "/assets/jquery-ui/core.js?body=1" for 127.0.0.1 at 2015-11-13 13:07:02 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-13 13:07:02 +0200
+
+
+Started GET "/assets/jquery-ui/datepicker.js?body=1" for 127.0.0.1 at 2015-11-13 13:07:02 +0200
+
+
+Started GET "/assets/jquery-ui/widget.js?body=1" for 127.0.0.1 at 2015-11-13 13:07:02 +0200
+
+
+Started GET "/assets/jquery-ui/button.js?body=1" for 127.0.0.1 at 2015-11-13 13:07:02 +0200
+
+
+Started GET "/assets/jquery-ui/mouse.js?body=1" for 127.0.0.1 at 2015-11-13 13:07:02 +0200
+
+
+Started GET "/assets/jquery-ui/draggable.js?body=1" for 127.0.0.1 at 2015-11-13 13:07:02 +0200
+
+
+Started GET "/assets/jquery-ui/position.js?body=1" for 127.0.0.1 at 2015-11-13 13:07:02 +0200
+
+
+Started GET "/assets/jquery-ui/resizable.js?body=1" for 127.0.0.1 at 2015-11-13 13:07:02 +0200
+
+
+Started GET "/assets/jquery-ui/dialog.js?body=1" for 127.0.0.1 at 2015-11-13 13:07:02 +0200
+
+
+Started GET "/assets/jquery-ui/sortable.js?body=1" for 127.0.0.1 at 2015-11-13 13:07:02 +0200
+
+
+Started GET "/assets/jquery-ui/tabs.js?body=1" for 127.0.0.1 at 2015-11-13 13:07:02 +0200
+
+
+Started GET "/assets/active_admin/jquery_ui.js?body=1" for 127.0.0.1 at 2015-11-13 13:07:02 +0200
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2015-11-13 13:07:03 +0200
+
+
+Started GET "/assets/active_admin/lib/batch_actions.js?body=1" for 127.0.0.1 at 2015-11-13 13:07:03 +0200
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.js?body=1" for 127.0.0.1 at 2015-11-13 13:07:03 +0200
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.js?body=1" for 127.0.0.1 at 2015-11-13 13:07:03 +0200
+
+
+Started GET "/assets/active_admin/lib/flash.js?body=1" for 127.0.0.1 at 2015-11-13 13:07:03 +0200
+
+
+Started GET "/assets/active_admin/lib/has_many.js?body=1" for 127.0.0.1 at 2015-11-13 13:07:03 +0200
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.js?body=1" for 127.0.0.1 at 2015-11-13 13:07:03 +0200
+
+
+Started GET "/assets/active_admin/lib/per_page.js?body=1" for 127.0.0.1 at 2015-11-13 13:07:03 +0200
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.js?body=1" for 127.0.0.1 at 2015-11-13 13:07:03 +0200
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.js?body=1" for 127.0.0.1 at 2015-11-13 13:07:03 +0200
+
+
+Started GET "/assets/active_admin/ext/jquery.js?body=1" for 127.0.0.1 at 2015-11-13 13:07:03 +0200
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2015-11-13 13:07:03 +0200
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2015-11-13 13:07:03 +0200
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2015-11-13 13:07:03 +0200
+
+
+Started GET "/assets/catogories.js?body=1" for 127.0.0.1 at 2015-11-13 13:07:03 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-11-13 13:07:03 +0200
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-11-13 13:07:03 +0200
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-11-13 13:07:03 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-13 13:07:03 +0200
+
+
+Started GET "/categories/2" for 127.0.0.1 at 2015-11-13 13:07:27 +0200
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mCategory Load (0.0ms)[0m  SELECT  "categories".* FROM "categories"  WHERE "categories"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts"  WHERE "posts"."category_id" = $1[0m  [["category_id", 2]]
+  Rendered categories/show.html.erb within layouts/application (3.0ms)
+  Rendered partials/_header.html.erb (249.2ms)
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered partials/_sidebar.html.erb (6.0ms)
+Completed 200 OK in 276ms (Views: 271.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2015-11-13 13:07:27 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-13 13:07:27 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-13 13:07:27 +0200
+
+
+Started GET "/assets/jquery-ui/core.js?body=1" for 127.0.0.1 at 2015-11-13 13:07:27 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-13 13:07:27 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-13 13:07:28 +0200
+
+
+Started GET "/assets/jquery-ui/datepicker.js?body=1" for 127.0.0.1 at 2015-11-13 13:07:28 +0200
+
+
+Started GET "/assets/jquery-ui/widget.js?body=1" for 127.0.0.1 at 2015-11-13 13:07:28 +0200
+
+
+Started GET "/assets/jquery-ui/button.js?body=1" for 127.0.0.1 at 2015-11-13 13:07:28 +0200
+
+
+Started GET "/assets/jquery-ui/mouse.js?body=1" for 127.0.0.1 at 2015-11-13 13:07:28 +0200
+
+
+Started GET "/assets/jquery-ui/draggable.js?body=1" for 127.0.0.1 at 2015-11-13 13:07:28 +0200
+
+
+Started GET "/assets/jquery-ui/position.js?body=1" for 127.0.0.1 at 2015-11-13 13:07:28 +0200
+
+
+Started GET "/assets/jquery-ui/resizable.js?body=1" for 127.0.0.1 at 2015-11-13 13:07:28 +0200
+
+
+Started GET "/assets/jquery-ui/dialog.js?body=1" for 127.0.0.1 at 2015-11-13 13:07:28 +0200
+
+
+Started GET "/assets/jquery-ui/sortable.js?body=1" for 127.0.0.1 at 2015-11-13 13:07:28 +0200
+
+
+Started GET "/assets/jquery-ui/tabs.js?body=1" for 127.0.0.1 at 2015-11-13 13:07:28 +0200
+
+
+Started GET "/assets/active_admin/jquery_ui.js?body=1" for 127.0.0.1 at 2015-11-13 13:07:28 +0200
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2015-11-13 13:07:28 +0200
+
+
+Started GET "/assets/active_admin/lib/batch_actions.js?body=1" for 127.0.0.1 at 2015-11-13 13:07:28 +0200
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.js?body=1" for 127.0.0.1 at 2015-11-13 13:07:28 +0200
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.js?body=1" for 127.0.0.1 at 2015-11-13 13:07:28 +0200
+
+
+Started GET "/assets/active_admin/lib/flash.js?body=1" for 127.0.0.1 at 2015-11-13 13:07:28 +0200
+
+
+Started GET "/assets/active_admin/lib/has_many.js?body=1" for 127.0.0.1 at 2015-11-13 13:07:28 +0200
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.js?body=1" for 127.0.0.1 at 2015-11-13 13:07:28 +0200
+
+
+Started GET "/assets/active_admin/lib/per_page.js?body=1" for 127.0.0.1 at 2015-11-13 13:07:28 +0200
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.js?body=1" for 127.0.0.1 at 2015-11-13 13:07:28 +0200
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.js?body=1" for 127.0.0.1 at 2015-11-13 13:07:28 +0200
+
+
+Started GET "/assets/active_admin/ext/jquery.js?body=1" for 127.0.0.1 at 2015-11-13 13:07:28 +0200
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2015-11-13 13:07:28 +0200
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2015-11-13 13:07:28 +0200
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2015-11-13 13:07:28 +0200
+
+
+Started GET "/assets/catogories.js?body=1" for 127.0.0.1 at 2015-11-13 13:07:28 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-11-13 13:07:28 +0200
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-11-13 13:07:28 +0200
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-11-13 13:07:28 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-13 13:07:28 +0200
+
+
+Started GET "/categories/2" for 127.0.0.1 at 2015-11-13 13:09:30 +0200
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mCategory Load (1.0ms)[0m  SELECT  "categories".* FROM "categories"  WHERE "categories"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mPost Load (1.0ms)[0m  [1mSELECT "posts".* FROM "posts"  WHERE "posts"."category_id" = $1[0m  [["category_id", 2]]
+  Rendered categories/show.html.erb within layouts/application (4.0ms)
+  Rendered partials/_header.html.erb (260.2ms)
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mPost Load (1.0ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered partials/_sidebar.html.erb (6.0ms)
+Completed 200 OK in 289ms (Views: 282.2ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2015-11-13 13:09:31 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-13 13:09:31 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-13 13:09:31 +0200
+
+
+Started GET "/assets/jquery-ui/core.js?body=1" for 127.0.0.1 at 2015-11-13 13:09:31 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-13 13:09:31 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-13 13:09:31 +0200
+
+
+Started GET "/assets/jquery-ui/datepicker.js?body=1" for 127.0.0.1 at 2015-11-13 13:09:31 +0200
+
+
+Started GET "/assets/jquery-ui/widget.js?body=1" for 127.0.0.1 at 2015-11-13 13:09:31 +0200
+
+
+Started GET "/assets/jquery-ui/button.js?body=1" for 127.0.0.1 at 2015-11-13 13:09:31 +0200
+
+
+Started GET "/assets/jquery-ui/mouse.js?body=1" for 127.0.0.1 at 2015-11-13 13:09:31 +0200
+
+
+Started GET "/assets/jquery-ui/draggable.js?body=1" for 127.0.0.1 at 2015-11-13 13:09:31 +0200
+
+
+Started GET "/assets/jquery-ui/position.js?body=1" for 127.0.0.1 at 2015-11-13 13:09:31 +0200
+
+
+Started GET "/assets/jquery-ui/resizable.js?body=1" for 127.0.0.1 at 2015-11-13 13:09:31 +0200
+
+
+Started GET "/assets/jquery-ui/dialog.js?body=1" for 127.0.0.1 at 2015-11-13 13:09:31 +0200
+
+
+Started GET "/assets/jquery-ui/sortable.js?body=1" for 127.0.0.1 at 2015-11-13 13:09:31 +0200
+
+
+Started GET "/assets/jquery-ui/tabs.js?body=1" for 127.0.0.1 at 2015-11-13 13:09:31 +0200
+
+
+Started GET "/assets/active_admin/jquery_ui.js?body=1" for 127.0.0.1 at 2015-11-13 13:09:31 +0200
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2015-11-13 13:09:31 +0200
+
+
+Started GET "/assets/active_admin/lib/batch_actions.js?body=1" for 127.0.0.1 at 2015-11-13 13:09:31 +0200
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.js?body=1" for 127.0.0.1 at 2015-11-13 13:09:31 +0200
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.js?body=1" for 127.0.0.1 at 2015-11-13 13:09:31 +0200
+
+
+Started GET "/assets/active_admin/lib/flash.js?body=1" for 127.0.0.1 at 2015-11-13 13:09:31 +0200
+
+
+Started GET "/assets/active_admin/lib/has_many.js?body=1" for 127.0.0.1 at 2015-11-13 13:09:31 +0200
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.js?body=1" for 127.0.0.1 at 2015-11-13 13:09:31 +0200
+
+
+Started GET "/assets/active_admin/lib/per_page.js?body=1" for 127.0.0.1 at 2015-11-13 13:09:31 +0200
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.js?body=1" for 127.0.0.1 at 2015-11-13 13:09:31 +0200
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.js?body=1" for 127.0.0.1 at 2015-11-13 13:09:31 +0200
+
+
+Started GET "/assets/active_admin/ext/jquery.js?body=1" for 127.0.0.1 at 2015-11-13 13:09:31 +0200
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2015-11-13 13:09:31 +0200
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2015-11-13 13:09:31 +0200
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2015-11-13 13:09:31 +0200
+
+
+Started GET "/assets/catogories.js?body=1" for 127.0.0.1 at 2015-11-13 13:09:31 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-11-13 13:09:31 +0200
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-11-13 13:09:31 +0200
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-11-13 13:09:31 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-13 13:09:31 +0200
+
+
+Started GET "/categories/2" for 127.0.0.1 at 2015-11-13 13:11:06 +0200
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mCategory Load (0.0ms)[0m  SELECT  "categories".* FROM "categories"  WHERE "categories"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts"  WHERE "posts"."category_id" = $1[0m  [["category_id", 2]]
+  Rendered categories/show.html.erb within layouts/application (3.0ms)
+  Rendered partials/_header.html.erb (238.3ms)
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mPost Load (1.0ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered partials/_sidebar.html.erb (7.0ms)
+Completed 200 OK in 262ms (Views: 258.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-13 13:11:06 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-13 13:11:06 +0200
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2015-11-13 13:11:06 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-13 13:11:06 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-13 13:11:06 +0200
+
+
+Started GET "/assets/jquery-ui/core.js?body=1" for 127.0.0.1 at 2015-11-13 13:11:06 +0200
+
+
+Started GET "/assets/jquery-ui/datepicker.js?body=1" for 127.0.0.1 at 2015-11-13 13:11:06 +0200
+
+
+Started GET "/assets/jquery-ui/widget.js?body=1" for 127.0.0.1 at 2015-11-13 13:11:06 +0200
+
+
+Started GET "/assets/jquery-ui/button.js?body=1" for 127.0.0.1 at 2015-11-13 13:11:06 +0200
+
+
+Started GET "/assets/jquery-ui/mouse.js?body=1" for 127.0.0.1 at 2015-11-13 13:11:06 +0200
+
+
+Started GET "/assets/jquery-ui/draggable.js?body=1" for 127.0.0.1 at 2015-11-13 13:11:06 +0200
+
+
+Started GET "/assets/jquery-ui/position.js?body=1" for 127.0.0.1 at 2015-11-13 13:11:06 +0200
+
+
+Started GET "/assets/jquery-ui/resizable.js?body=1" for 127.0.0.1 at 2015-11-13 13:11:06 +0200
+
+
+Started GET "/assets/jquery-ui/dialog.js?body=1" for 127.0.0.1 at 2015-11-13 13:11:06 +0200
+
+
+Started GET "/assets/jquery-ui/sortable.js?body=1" for 127.0.0.1 at 2015-11-13 13:11:06 +0200
+
+
+Started GET "/assets/jquery-ui/tabs.js?body=1" for 127.0.0.1 at 2015-11-13 13:11:06 +0200
+
+
+Started GET "/assets/active_admin/jquery_ui.js?body=1" for 127.0.0.1 at 2015-11-13 13:11:06 +0200
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2015-11-13 13:11:06 +0200
+
+
+Started GET "/assets/active_admin/lib/batch_actions.js?body=1" for 127.0.0.1 at 2015-11-13 13:11:06 +0200
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.js?body=1" for 127.0.0.1 at 2015-11-13 13:11:06 +0200
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.js?body=1" for 127.0.0.1 at 2015-11-13 13:11:06 +0200
+
+
+Started GET "/assets/active_admin/lib/flash.js?body=1" for 127.0.0.1 at 2015-11-13 13:11:06 +0200
+
+
+Started GET "/assets/active_admin/lib/has_many.js?body=1" for 127.0.0.1 at 2015-11-13 13:11:06 +0200
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.js?body=1" for 127.0.0.1 at 2015-11-13 13:11:06 +0200
+
+
+Started GET "/assets/active_admin/lib/per_page.js?body=1" for 127.0.0.1 at 2015-11-13 13:11:06 +0200
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.js?body=1" for 127.0.0.1 at 2015-11-13 13:11:06 +0200
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.js?body=1" for 127.0.0.1 at 2015-11-13 13:11:06 +0200
+
+
+Started GET "/assets/active_admin/ext/jquery.js?body=1" for 127.0.0.1 at 2015-11-13 13:11:06 +0200
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2015-11-13 13:11:07 +0200
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2015-11-13 13:11:07 +0200
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2015-11-13 13:11:07 +0200
+
+
+Started GET "/assets/catogories.js?body=1" for 127.0.0.1 at 2015-11-13 13:11:07 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-11-13 13:11:07 +0200
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-11-13 13:11:07 +0200
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-11-13 13:11:07 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-13 13:11:07 +0200
+
+
+Started GET "/categories/2" for 127.0.0.1 at 2015-11-13 13:11:59 +0200
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mCategory Load (1.0ms)[0m  SELECT  "categories".* FROM "categories"  WHERE "categories"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mPost Load (1.0ms)[0m  [1mSELECT "posts".* FROM "posts"  WHERE "posts"."category_id" = $1[0m  [["category_id", 2]]
+  Rendered categories/show.html.erb within layouts/application (5.0ms)
+  Rendered partials/_header.html.erb (248.2ms)
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mPost Load (1.0ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered partials/_sidebar.html.erb (6.0ms)
+Completed 200 OK in 277ms (Views: 271.2ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2015-11-13 13:11:59 +0200
+
+
+Started GET "/assets/jquery-ui/core.js?body=1" for 127.0.0.1 at 2015-11-13 13:11:59 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-13 13:11:59 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-13 13:11:59 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-13 13:11:59 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-13 13:11:59 +0200
+
+
+Started GET "/assets/jquery-ui/datepicker.js?body=1" for 127.0.0.1 at 2015-11-13 13:11:59 +0200
+
+
+Started GET "/assets/jquery-ui/widget.js?body=1" for 127.0.0.1 at 2015-11-13 13:11:59 +0200
+
+
+Started GET "/assets/jquery-ui/button.js?body=1" for 127.0.0.1 at 2015-11-13 13:11:59 +0200
+
+
+Started GET "/assets/jquery-ui/mouse.js?body=1" for 127.0.0.1 at 2015-11-13 13:11:59 +0200
+
+
+Started GET "/assets/jquery-ui/draggable.js?body=1" for 127.0.0.1 at 2015-11-13 13:11:59 +0200
+
+
+Started GET "/assets/jquery-ui/position.js?body=1" for 127.0.0.1 at 2015-11-13 13:11:59 +0200
+
+
+Started GET "/assets/jquery-ui/resizable.js?body=1" for 127.0.0.1 at 2015-11-13 13:11:59 +0200
+
+
+Started GET "/assets/jquery-ui/dialog.js?body=1" for 127.0.0.1 at 2015-11-13 13:11:59 +0200
+
+
+Started GET "/assets/jquery-ui/sortable.js?body=1" for 127.0.0.1 at 2015-11-13 13:11:59 +0200
+
+
+Started GET "/assets/jquery-ui/tabs.js?body=1" for 127.0.0.1 at 2015-11-13 13:11:59 +0200
+
+
+Started GET "/assets/active_admin/jquery_ui.js?body=1" for 127.0.0.1 at 2015-11-13 13:11:59 +0200
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2015-11-13 13:12:00 +0200
+
+
+Started GET "/assets/active_admin/lib/batch_actions.js?body=1" for 127.0.0.1 at 2015-11-13 13:12:00 +0200
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.js?body=1" for 127.0.0.1 at 2015-11-13 13:12:00 +0200
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.js?body=1" for 127.0.0.1 at 2015-11-13 13:12:00 +0200
+
+
+Started GET "/assets/active_admin/lib/flash.js?body=1" for 127.0.0.1 at 2015-11-13 13:12:00 +0200
+
+
+Started GET "/assets/active_admin/lib/has_many.js?body=1" for 127.0.0.1 at 2015-11-13 13:12:00 +0200
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.js?body=1" for 127.0.0.1 at 2015-11-13 13:12:00 +0200
+
+
+Started GET "/assets/active_admin/lib/per_page.js?body=1" for 127.0.0.1 at 2015-11-13 13:12:00 +0200
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.js?body=1" for 127.0.0.1 at 2015-11-13 13:12:00 +0200
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.js?body=1" for 127.0.0.1 at 2015-11-13 13:12:00 +0200
+
+
+Started GET "/assets/active_admin/ext/jquery.js?body=1" for 127.0.0.1 at 2015-11-13 13:12:00 +0200
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2015-11-13 13:12:00 +0200
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2015-11-13 13:12:00 +0200
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2015-11-13 13:12:00 +0200
+
+
+Started GET "/assets/catogories.js?body=1" for 127.0.0.1 at 2015-11-13 13:12:00 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-11-13 13:12:00 +0200
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-11-13 13:12:00 +0200
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-11-13 13:12:00 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-13 13:12:00 +0200
+
+
+Started GET "/categories/2" for 127.0.0.1 at 2015-11-13 13:12:28 +0200
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mCategory Load (0.0ms)[0m  SELECT  "categories".* FROM "categories"  WHERE "categories"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts"  WHERE "posts"."category_id" = $1[0m  [["category_id", 2]]
+  Rendered categories/show.html.erb within layouts/application (5.1ms)
+  Rendered partials/_header.html.erb (254.2ms)
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mPost Load (1.0ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered partials/_sidebar.html.erb (6.0ms)
+Completed 200 OK in 285ms (Views: 280.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-13 13:12:28 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-13 13:12:29 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-13 13:12:29 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-13 13:12:29 +0200
+
+
+Started GET "/assets/jquery-ui/core.js?body=1" for 127.0.0.1 at 2015-11-13 13:12:29 +0200
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2015-11-13 13:12:29 +0200
+
+
+Started GET "/assets/jquery-ui/datepicker.js?body=1" for 127.0.0.1 at 2015-11-13 13:12:29 +0200
+
+
+Started GET "/assets/jquery-ui/widget.js?body=1" for 127.0.0.1 at 2015-11-13 13:12:29 +0200
+
+
+Started GET "/assets/jquery-ui/button.js?body=1" for 127.0.0.1 at 2015-11-13 13:12:29 +0200
+
+
+Started GET "/assets/jquery-ui/mouse.js?body=1" for 127.0.0.1 at 2015-11-13 13:12:29 +0200
+
+
+Started GET "/assets/jquery-ui/draggable.js?body=1" for 127.0.0.1 at 2015-11-13 13:12:29 +0200
+
+
+Started GET "/assets/jquery-ui/position.js?body=1" for 127.0.0.1 at 2015-11-13 13:12:29 +0200
+
+
+Started GET "/assets/jquery-ui/resizable.js?body=1" for 127.0.0.1 at 2015-11-13 13:12:29 +0200
+
+
+Started GET "/assets/jquery-ui/dialog.js?body=1" for 127.0.0.1 at 2015-11-13 13:12:29 +0200
+
+
+Started GET "/assets/jquery-ui/sortable.js?body=1" for 127.0.0.1 at 2015-11-13 13:12:29 +0200
+
+
+Started GET "/assets/jquery-ui/tabs.js?body=1" for 127.0.0.1 at 2015-11-13 13:12:29 +0200
+
+
+Started GET "/assets/active_admin/jquery_ui.js?body=1" for 127.0.0.1 at 2015-11-13 13:12:29 +0200
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2015-11-13 13:12:29 +0200
+
+
+Started GET "/assets/active_admin/lib/batch_actions.js?body=1" for 127.0.0.1 at 2015-11-13 13:12:29 +0200
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.js?body=1" for 127.0.0.1 at 2015-11-13 13:12:29 +0200
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.js?body=1" for 127.0.0.1 at 2015-11-13 13:12:29 +0200
+
+
+Started GET "/assets/active_admin/lib/flash.js?body=1" for 127.0.0.1 at 2015-11-13 13:12:29 +0200
+
+
+Started GET "/assets/active_admin/lib/has_many.js?body=1" for 127.0.0.1 at 2015-11-13 13:12:29 +0200
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.js?body=1" for 127.0.0.1 at 2015-11-13 13:12:29 +0200
+
+
+Started GET "/assets/active_admin/lib/per_page.js?body=1" for 127.0.0.1 at 2015-11-13 13:12:29 +0200
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.js?body=1" for 127.0.0.1 at 2015-11-13 13:12:29 +0200
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.js?body=1" for 127.0.0.1 at 2015-11-13 13:12:29 +0200
+
+
+Started GET "/assets/active_admin/ext/jquery.js?body=1" for 127.0.0.1 at 2015-11-13 13:12:29 +0200
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2015-11-13 13:12:29 +0200
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2015-11-13 13:12:29 +0200
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2015-11-13 13:12:29 +0200
+
+
+Started GET "/assets/catogories.js?body=1" for 127.0.0.1 at 2015-11-13 13:12:29 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-11-13 13:12:29 +0200
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-11-13 13:12:29 +0200
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-11-13 13:12:29 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-13 13:12:29 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-13 13:13:12 +0200
+Processing by HomeController#index as HTML
+  [1m[35mPost Load (1.0ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered home/index.html.erb within layouts/application (5.0ms)
+  Rendered partials/_header.html.erb (229.1ms)
+  [1m[36mCategory Load (1.0ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered partials/_sidebar.html.erb (4.0ms)
+Completed 200 OK in 251ms (Views: 249.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2015-11-13 13:13:16 +0200
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.0ms)
+  Rendered partials/_header.html.erb (221.9ms)
+  [1m[36mCategory Load (1.0ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered partials/_sidebar.html.erb (6.0ms)
+Completed 200 OK in 240ms (Views: 238.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-11-13 13:13:18 +0200
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (1.0ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (4.0ms)
+  Rendered partials/_header.html.erb (235.3ms)
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered partials/_sidebar.html.erb (4.0ms)
+Completed 200 OK in 254ms (Views: 253.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2015-11-13 13:13:20 +0200
+Processing by PagesController#contact as HTML
+  Rendered pages/contact.html.erb within layouts/application (0.0ms)
+  Rendered partials/_header.html.erb (225.2ms)
+  [1m[35mCategory Load (1.0ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered partials/_sidebar.html.erb (6.0ms)
+Completed 200 OK in 242ms (Views: 240.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-11-13 13:13:21 +0200
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (1.0ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (4.0ms)
+  Rendered partials/_header.html.erb (228.2ms)
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered partials/_sidebar.html.erb (4.0ms)
+Completed 200 OK in 248ms (Views: 246.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2015-11-13 13:13:22 +0200
+Processing by PagesController#contact as HTML
+  Rendered pages/contact.html.erb within layouts/application (0.0ms)
+  Rendered partials/_header.html.erb (233.2ms)
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered partials/_sidebar.html.erb (5.0ms)
+Completed 200 OK in 250ms (Views: 249.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2015-11-13 13:13:23 +0200
+Processing by PagesController#resources as HTML
+  Rendered pages/resources.html.erb within layouts/application (0.0ms)
+  Rendered partials/_header.html.erb (231.2ms)
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered partials/_sidebar.html.erb (5.0ms)
+Completed 200 OK in 247ms (Views: 247.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2015-11-13 13:13:25 +0200
+Processing by PagesController#contact as HTML
+  Rendered pages/contact.html.erb within layouts/application (0.0ms)
+  Rendered partials/_header.html.erb (220.2ms)
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35mPost Load (1.0ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered partials/_sidebar.html.erb (6.0ms)
+Completed 200 OK in 236ms (Views: 235.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2015-11-13 13:13:55 +0200
+Processing by PagesController#contact as HTML
+  Rendered pages/contact.html.erb within layouts/application (0.5ms)
+  Rendered partials/_header.html.erb (247.7ms)
+  [1m[36mCategory Load (1.0ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered partials/_sidebar.html.erb (7.5ms)
+Completed 200 OK in 271ms (Views: 268.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2015-11-13 13:13:55 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-13 13:13:55 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-13 13:13:55 +0200
+
+
+Started GET "/assets/jquery-ui/core.js?body=1" for 127.0.0.1 at 2015-11-13 13:13:55 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-13 13:13:55 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-13 13:13:55 +0200
+
+
+Started GET "/assets/jquery-ui/datepicker.js?body=1" for 127.0.0.1 at 2015-11-13 13:13:55 +0200
+
+
+Started GET "/assets/jquery-ui/widget.js?body=1" for 127.0.0.1 at 2015-11-13 13:13:55 +0200
+
+
+Started GET "/assets/jquery-ui/button.js?body=1" for 127.0.0.1 at 2015-11-13 13:13:55 +0200
+
+
+Started GET "/assets/jquery-ui/mouse.js?body=1" for 127.0.0.1 at 2015-11-13 13:13:55 +0200
+
+
+Started GET "/assets/jquery-ui/draggable.js?body=1" for 127.0.0.1 at 2015-11-13 13:13:55 +0200
+
+
+Started GET "/assets/jquery-ui/position.js?body=1" for 127.0.0.1 at 2015-11-13 13:13:55 +0200
+
+
+Started GET "/assets/jquery-ui/resizable.js?body=1" for 127.0.0.1 at 2015-11-13 13:13:55 +0200
+
+
+Started GET "/assets/jquery-ui/dialog.js?body=1" for 127.0.0.1 at 2015-11-13 13:13:55 +0200
+
+
+Started GET "/assets/jquery-ui/sortable.js?body=1" for 127.0.0.1 at 2015-11-13 13:13:55 +0200
+
+
+Started GET "/assets/jquery-ui/tabs.js?body=1" for 127.0.0.1 at 2015-11-13 13:13:55 +0200
+
+
+Started GET "/assets/active_admin/jquery_ui.js?body=1" for 127.0.0.1 at 2015-11-13 13:13:55 +0200
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2015-11-13 13:13:55 +0200
+
+
+Started GET "/assets/active_admin/lib/batch_actions.js?body=1" for 127.0.0.1 at 2015-11-13 13:13:55 +0200
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.js?body=1" for 127.0.0.1 at 2015-11-13 13:13:55 +0200
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.js?body=1" for 127.0.0.1 at 2015-11-13 13:13:55 +0200
+
+
+Started GET "/assets/active_admin/lib/flash.js?body=1" for 127.0.0.1 at 2015-11-13 13:13:55 +0200
+
+
+Started GET "/assets/active_admin/lib/has_many.js?body=1" for 127.0.0.1 at 2015-11-13 13:13:55 +0200
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.js?body=1" for 127.0.0.1 at 2015-11-13 13:13:55 +0200
+
+
+Started GET "/assets/active_admin/lib/per_page.js?body=1" for 127.0.0.1 at 2015-11-13 13:13:55 +0200
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.js?body=1" for 127.0.0.1 at 2015-11-13 13:13:55 +0200
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.js?body=1" for 127.0.0.1 at 2015-11-13 13:13:55 +0200
+
+
+Started GET "/assets/active_admin/ext/jquery.js?body=1" for 127.0.0.1 at 2015-11-13 13:13:55 +0200
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2015-11-13 13:13:55 +0200
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2015-11-13 13:13:56 +0200
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2015-11-13 13:13:56 +0200
+
+
+Started GET "/assets/catogories.js?body=1" for 127.0.0.1 at 2015-11-13 13:13:56 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-11-13 13:13:56 +0200
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-11-13 13:13:56 +0200
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-11-13 13:13:56 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-13 13:13:56 +0200
+
+
+Started GET "/resources" for 127.0.0.1 at 2015-11-13 13:14:03 +0200
+Processing by PagesController#resources as HTML
+  Rendered pages/resources.html.erb within layouts/application (0.0ms)
+  Rendered partials/_header.html.erb (227.2ms)
+  [1m[36mCategory Load (1.0ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35mPost Load (1.0ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered partials/_sidebar.html.erb (5.0ms)
+Completed 200 OK in 242ms (Views: 240.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2015-11-13 13:14:52 +0200
+Processing by PagesController#resources as HTML
+  Rendered pages/resources.html.erb within layouts/application (1.0ms)
+  Rendered partials/_header.html.erb (239.2ms)
+  [1m[36mCategory Load (1.0ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered partials/_sidebar.html.erb (7.0ms)
+Completed 200 OK in 262ms (Views: 261.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-13 13:14:52 +0200
+
+
+Started GET "/assets/jquery-ui/core.js?body=1" for 127.0.0.1 at 2015-11-13 13:14:52 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-13 13:14:52 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-13 13:14:52 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-13 13:14:52 +0200
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2015-11-13 13:14:52 +0200
+
+
+Started GET "/assets/jquery-ui/datepicker.js?body=1" for 127.0.0.1 at 2015-11-13 13:14:52 +0200
+
+
+Started GET "/assets/jquery-ui/widget.js?body=1" for 127.0.0.1 at 2015-11-13 13:14:52 +0200
+
+
+Started GET "/assets/jquery-ui/button.js?body=1" for 127.0.0.1 at 2015-11-13 13:14:52 +0200
+
+
+Started GET "/assets/jquery-ui/mouse.js?body=1" for 127.0.0.1 at 2015-11-13 13:14:52 +0200
+
+
+Started GET "/assets/jquery-ui/draggable.js?body=1" for 127.0.0.1 at 2015-11-13 13:14:52 +0200
+
+
+Started GET "/assets/jquery-ui/position.js?body=1" for 127.0.0.1 at 2015-11-13 13:14:52 +0200
+
+
+Started GET "/assets/jquery-ui/resizable.js?body=1" for 127.0.0.1 at 2015-11-13 13:14:52 +0200
+
+
+Started GET "/assets/jquery-ui/dialog.js?body=1" for 127.0.0.1 at 2015-11-13 13:14:52 +0200
+
+
+Started GET "/assets/jquery-ui/sortable.js?body=1" for 127.0.0.1 at 2015-11-13 13:14:52 +0200
+
+
+Started GET "/assets/jquery-ui/tabs.js?body=1" for 127.0.0.1 at 2015-11-13 13:14:52 +0200
+
+
+Started GET "/assets/active_admin/jquery_ui.js?body=1" for 127.0.0.1 at 2015-11-13 13:14:52 +0200
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2015-11-13 13:14:53 +0200
+
+
+Started GET "/assets/active_admin/lib/batch_actions.js?body=1" for 127.0.0.1 at 2015-11-13 13:14:53 +0200
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.js?body=1" for 127.0.0.1 at 2015-11-13 13:14:53 +0200
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.js?body=1" for 127.0.0.1 at 2015-11-13 13:14:53 +0200
+
+
+Started GET "/assets/active_admin/lib/flash.js?body=1" for 127.0.0.1 at 2015-11-13 13:14:53 +0200
+
+
+Started GET "/assets/active_admin/lib/has_many.js?body=1" for 127.0.0.1 at 2015-11-13 13:14:53 +0200
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.js?body=1" for 127.0.0.1 at 2015-11-13 13:14:53 +0200
+
+
+Started GET "/assets/active_admin/lib/per_page.js?body=1" for 127.0.0.1 at 2015-11-13 13:14:53 +0200
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.js?body=1" for 127.0.0.1 at 2015-11-13 13:14:53 +0200
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.js?body=1" for 127.0.0.1 at 2015-11-13 13:14:53 +0200
+
+
+Started GET "/assets/active_admin/ext/jquery.js?body=1" for 127.0.0.1 at 2015-11-13 13:14:53 +0200
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2015-11-13 13:14:53 +0200
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2015-11-13 13:14:53 +0200
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2015-11-13 13:14:53 +0200
+
+
+Started GET "/assets/catogories.js?body=1" for 127.0.0.1 at 2015-11-13 13:14:53 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-11-13 13:14:53 +0200
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-11-13 13:14:53 +0200
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-11-13 13:14:53 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-13 13:14:53 +0200
+
+
+Started GET "/resources" for 127.0.0.1 at 2015-11-13 13:15:04 +0200
+Processing by PagesController#resources as HTML
+  Rendered pages/resources.html.erb within layouts/application (0.0ms)
+  Rendered partials/_header.html.erb (236.2ms)
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered partials/_sidebar.html.erb (6.0ms)
+Completed 200 OK in 253ms (Views: 253.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2015-11-13 13:17:05 +0200
+Processing by PagesController#resources as HTML
+  Rendered pages/resources.html.erb within layouts/application (1.0ms)
+  Rendered partials/_header.html.erb (273.2ms)
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35mPost Load (1.0ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered partials/_sidebar.html.erb (6.0ms)
+Completed 200 OK in 298ms (Views: 296.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2015-11-13 13:17:06 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-13 13:17:06 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-13 13:17:06 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-13 13:17:06 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-13 13:17:06 +0200
+
+
+Started GET "/assets/jquery-ui/core.js?body=1" for 127.0.0.1 at 2015-11-13 13:17:06 +0200
+
+
+Started GET "/assets/jquery-ui/datepicker.js?body=1" for 127.0.0.1 at 2015-11-13 13:17:06 +0200
+
+
+Started GET "/assets/jquery-ui/widget.js?body=1" for 127.0.0.1 at 2015-11-13 13:17:06 +0200
+
+
+Started GET "/assets/jquery-ui/button.js?body=1" for 127.0.0.1 at 2015-11-13 13:17:06 +0200
+
+
+Started GET "/assets/jquery-ui/mouse.js?body=1" for 127.0.0.1 at 2015-11-13 13:17:06 +0200
+
+
+Started GET "/assets/jquery-ui/draggable.js?body=1" for 127.0.0.1 at 2015-11-13 13:17:06 +0200
+
+
+Started GET "/assets/jquery-ui/position.js?body=1" for 127.0.0.1 at 2015-11-13 13:17:06 +0200
+
+
+Started GET "/assets/jquery-ui/resizable.js?body=1" for 127.0.0.1 at 2015-11-13 13:17:06 +0200
+
+
+Started GET "/assets/jquery-ui/dialog.js?body=1" for 127.0.0.1 at 2015-11-13 13:17:06 +0200
+
+
+Started GET "/assets/jquery-ui/sortable.js?body=1" for 127.0.0.1 at 2015-11-13 13:17:06 +0200
+
+
+Started GET "/assets/jquery-ui/tabs.js?body=1" for 127.0.0.1 at 2015-11-13 13:17:06 +0200
+
+
+Started GET "/assets/active_admin/jquery_ui.js?body=1" for 127.0.0.1 at 2015-11-13 13:17:06 +0200
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2015-11-13 13:17:06 +0200
+
+
+Started GET "/assets/active_admin/lib/batch_actions.js?body=1" for 127.0.0.1 at 2015-11-13 13:17:06 +0200
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.js?body=1" for 127.0.0.1 at 2015-11-13 13:17:06 +0200
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.js?body=1" for 127.0.0.1 at 2015-11-13 13:17:06 +0200
+
+
+Started GET "/assets/active_admin/lib/flash.js?body=1" for 127.0.0.1 at 2015-11-13 13:17:06 +0200
+
+
+Started GET "/assets/active_admin/lib/has_many.js?body=1" for 127.0.0.1 at 2015-11-13 13:17:06 +0200
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.js?body=1" for 127.0.0.1 at 2015-11-13 13:17:06 +0200
+
+
+Started GET "/assets/active_admin/lib/per_page.js?body=1" for 127.0.0.1 at 2015-11-13 13:17:06 +0200
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.js?body=1" for 127.0.0.1 at 2015-11-13 13:17:06 +0200
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.js?body=1" for 127.0.0.1 at 2015-11-13 13:17:06 +0200
+
+
+Started GET "/assets/active_admin/ext/jquery.js?body=1" for 127.0.0.1 at 2015-11-13 13:17:06 +0200
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2015-11-13 13:17:06 +0200
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2015-11-13 13:17:06 +0200
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2015-11-13 13:17:06 +0200
+
+
+Started GET "/assets/catogories.js?body=1" for 127.0.0.1 at 2015-11-13 13:17:06 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-11-13 13:17:06 +0200
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-11-13 13:17:06 +0200
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-11-13 13:17:06 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-13 13:17:06 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-13 13:17:11 +0200
+Processing by HomeController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered home/index.html.erb within layouts/application (4.0ms)
+  Rendered partials/_header.html.erb (232.9ms)
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered partials/_sidebar.html.erb (5.0ms)
+Completed 200 OK in 253ms (Views: 252.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2015-11-13 13:17:14 +0200
+Processing by PagesController#resources as HTML
+  Rendered pages/resources.html.erb within layouts/application (1.0ms)
+  Rendered partials/_header.html.erb (231.4ms)
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered partials/_sidebar.html.erb (6.0ms)
+Completed 200 OK in 249ms (Views: 248.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/resources" for 127.0.0.1 at 2015-11-13 13:17:32 +0200
+Processing by PagesController#resources as HTML
+  Rendered pages/resources.html.erb within layouts/application (1.0ms)
+  Rendered partials/_header.html.erb (248.4ms)
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered partials/_sidebar.html.erb (6.0ms)
+Completed 200 OK in 268ms (Views: 268.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-13 13:17:33 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-13 13:17:33 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-13 13:17:33 +0200
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2015-11-13 13:17:33 +0200
+
+
+Started GET "/assets/jquery-ui/core.js?body=1" for 127.0.0.1 at 2015-11-13 13:17:33 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-13 13:17:33 +0200
+
+
+Started GET "/assets/jquery-ui/datepicker.js?body=1" for 127.0.0.1 at 2015-11-13 13:17:33 +0200
+
+
+Started GET "/assets/jquery-ui/widget.js?body=1" for 127.0.0.1 at 2015-11-13 13:17:33 +0200
+
+
+Started GET "/assets/jquery-ui/button.js?body=1" for 127.0.0.1 at 2015-11-13 13:17:33 +0200
+
+
+Started GET "/assets/jquery-ui/mouse.js?body=1" for 127.0.0.1 at 2015-11-13 13:17:33 +0200
+
+
+Started GET "/assets/jquery-ui/draggable.js?body=1" for 127.0.0.1 at 2015-11-13 13:17:33 +0200
+
+
+Started GET "/assets/jquery-ui/position.js?body=1" for 127.0.0.1 at 2015-11-13 13:17:33 +0200
+
+
+Started GET "/assets/jquery-ui/resizable.js?body=1" for 127.0.0.1 at 2015-11-13 13:17:33 +0200
+
+
+Started GET "/assets/jquery-ui/dialog.js?body=1" for 127.0.0.1 at 2015-11-13 13:17:33 +0200
+
+
+Started GET "/assets/jquery-ui/sortable.js?body=1" for 127.0.0.1 at 2015-11-13 13:17:33 +0200
+
+
+Started GET "/assets/jquery-ui/tabs.js?body=1" for 127.0.0.1 at 2015-11-13 13:17:33 +0200
+
+
+Started GET "/assets/active_admin/jquery_ui.js?body=1" for 127.0.0.1 at 2015-11-13 13:17:33 +0200
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2015-11-13 13:17:33 +0200
+
+
+Started GET "/assets/active_admin/lib/batch_actions.js?body=1" for 127.0.0.1 at 2015-11-13 13:17:33 +0200
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.js?body=1" for 127.0.0.1 at 2015-11-13 13:17:33 +0200
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.js?body=1" for 127.0.0.1 at 2015-11-13 13:17:33 +0200
+
+
+Started GET "/assets/active_admin/lib/flash.js?body=1" for 127.0.0.1 at 2015-11-13 13:17:33 +0200
+
+
+Started GET "/assets/active_admin/lib/has_many.js?body=1" for 127.0.0.1 at 2015-11-13 13:17:33 +0200
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.js?body=1" for 127.0.0.1 at 2015-11-13 13:17:33 +0200
+
+
+Started GET "/assets/active_admin/lib/per_page.js?body=1" for 127.0.0.1 at 2015-11-13 13:17:33 +0200
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.js?body=1" for 127.0.0.1 at 2015-11-13 13:17:33 +0200
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.js?body=1" for 127.0.0.1 at 2015-11-13 13:17:33 +0200
+
+
+Started GET "/assets/active_admin/ext/jquery.js?body=1" for 127.0.0.1 at 2015-11-13 13:17:33 +0200
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2015-11-13 13:17:33 +0200
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2015-11-13 13:17:33 +0200
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2015-11-13 13:17:33 +0200
+
+
+Started GET "/assets/catogories.js?body=1" for 127.0.0.1 at 2015-11-13 13:17:33 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-11-13 13:17:33 +0200
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2015-11-13 13:17:33 +0200
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-11-13 13:17:33 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-13 13:17:33 +0200
+
+
+Started GET "/categories/3" for 127.0.0.1 at 2015-11-13 13:17:46 +0200
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mCategory Load (0.0ms)[0m  SELECT  "categories".* FROM "categories"  WHERE "categories"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts"  WHERE "posts"."category_id" = $1[0m  [["category_id", 3]]
+  Rendered categories/show.html.erb within layouts/application (3.0ms)
+  Rendered partials/_header.html.erb (231.6ms)
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered partials/_sidebar.html.erb (6.0ms)
+Completed 200 OK in 255ms (Views: 251.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories/4" for 127.0.0.1 at 2015-11-13 13:17:53 +0200
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mCategory Load (1.0ms)[0m  SELECT  "categories".* FROM "categories"  WHERE "categories"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mPost Load (1.0ms)[0m  [1mSELECT "posts".* FROM "posts"  WHERE "posts"."category_id" = $1[0m  [["category_id", 4]]
+  Rendered categories/show.html.erb within layouts/application (4.0ms)
+  Rendered partials/_header.html.erb (237.4ms)
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered partials/_sidebar.html.erb (6.0ms)
+Completed 200 OK in 259ms (Views: 256.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/categories/1" for 127.0.0.1 at 2015-11-13 13:17:57 +0200
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCategory Load (0.0ms)[0m  SELECT  "categories".* FROM "categories"  WHERE "categories"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts"  WHERE "posts"."category_id" = $1[0m  [["category_id", 1]]
+  Rendered categories/show.html.erb within layouts/application (2.0ms)
+  Rendered partials/_header.html.erb (226.8ms)
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered partials/_sidebar.html.erb (6.0ms)
+Completed 200 OK in 251ms (Views: 245.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories/2" for 127.0.0.1 at 2015-11-13 13:18:03 +0200
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mCategory Load (0.0ms)[0m  SELECT  "categories".* FROM "categories"  WHERE "categories"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts"  WHERE "posts"."category_id" = $1[0m  [["category_id", 2]]
+  Rendered categories/show.html.erb within layouts/application (3.5ms)
+  Rendered partials/_header.html.erb (225.7ms)
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered partials/_sidebar.html.erb (6.0ms)
+Completed 200 OK in 249ms (Views: 245.5ms | ActiveRecord: 0.0ms)
